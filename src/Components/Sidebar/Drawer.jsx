@@ -4,7 +4,7 @@ class Drawer extends Component {
   render() {
     return (
       <div>
-        DRAWER.
+        DRAWER COMPONENT.
       </div>
     )
   }
