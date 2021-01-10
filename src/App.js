@@ -3,10 +3,12 @@ import {Route,Switch} from "react-router-dom"
 import styled,{ThemeProvider} from "styled-components"
 import {lightTheme,darkTheme,GlobalStyle} from "./themes"
 import Drawer from "../src/Components/Sidebar/Drawer"
+import "./App.css"
 
 const StyledDiv = styled.div`
 
-  color:${props => props.theme.fontColor}
+  color:${props => props.theme.fontColor};
+  background-color:${props => props.theme.sidebarBgColor}
 `;
 const App = () => {
   const [theme,setTheme] = useState("dark")

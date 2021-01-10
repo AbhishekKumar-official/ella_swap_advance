@@ -1,0 +1,54 @@
+.drawer{
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    will-change: transform;
+    transition: transform .2s ease-in-out,width .2s ease-in-out;
+    width: 4.75rem;
+    z-index: 10000;
+
+    .drawer-header{
+        display: flex;
+        justify-content: center;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    .logo-compressed{ 
+        display: flex; 
+        align-content: center;
+    }
+    .logo{ display: none; }
+    .drawer-body{ 
+        overflow-y: auto; 
+
+        h6{
+            text-transform: uppercase;
+            margin: 0;
+            font-size: .625rem;
+            letter-spacing: .125rem;
+            padding: 1px 1.5625rem;
+            font-weight: 500;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 10px;
+            line-height: 1.5rem;
+        }
+        ul{
+            
+        }
+    }
+}
+.drawer:hover{ 
+    width: 13.75rem; 
+
+    .logo-compressed{ display: none; }
+    .logo{ 
+        display: flex; 
+        align-content: center;
+    }
+}
