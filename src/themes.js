@@ -10,6 +10,15 @@ export const lightTheme = {
     drawertitleBorder: "#15192a",
     drawertitleColor: "#9ea8b9",
     drawerulBorder: "#15192a",
+    drawerlinkColor: "#cacedb",
+    drawerlinkActiveColor: "#00b8d8",
+    drawerlinkActiveBgColor: "#2f3446",
+    drawerlinkActiveBoxShadowColor: "#00b8d8",
+    drawerlinkUniswapColor: "#ff2d79",
+    drawerlinkUniswapColor: "#ffffff",
+    drawerlinkIconColor: "#cacedb",
+    drawerlinkIconActiveColor: "#d0be0d",
+    themeSeparatorColor: "#ffffff",
 }
 export const darkTheme = {
     body : "#020416",
@@ -21,6 +30,15 @@ export const darkTheme = {
     drawertitleBorder: "#15192a",
     drawertitleColor: "#9ea8b9",
     drawerulBorder: "#15192a",
+    drawerlinkColor: "#cacedb",
+    drawerlinkActiveColor: "#00b8d8",
+    drawerlinkActiveBgColor: "#2f3446",
+    drawerlinkActiveBoxShadowColor: "#00b8d8",
+    drawerlinkUniswapBgColor: "#ff2d79",
+    drawerlinkUniswapColor: "#ffffff",
+    drawerlinkIconColor: "#cacedb",
+    drawerlinkIconActiveColor: "#d0be0d",
+    themeSeparatorColor: "#ffffff",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -41,8 +59,29 @@ export const GlobalStyle = createGlobalStyle`
             border-bottom-color: ${props => props.theme.drawertitleBorder};
             color: ${props => props.theme.drawertitleColor};
         }
+        .drawer-body h6.uniswap{ 
+            background-color: ${props => props.theme.drawerlinkUniswapBgColor};
+            color: ${props => props.theme.drawerlinkUniswapColor};
+        }
         .drawer-body ul{
             border-bottom-color: ${props => props.theme.drawerulBorder};
+        }
+        .drawer-body ul li a{
+            color: ${props => props.theme.drawerlinkColor};
+        }
+        .drawer-body ul li a.active{
+            color: ${props => props.theme.drawerlinkActiveColor};
+            background-color: ${props => props.theme.drawerlinkActiveBgColor};
+            box-shadow-color: ${props => props.theme.drawerlinkActiveBoxShadowColor};
+        }
+        .theme-icon{
+            color: ${props => props.theme.drawerlinkIconColor};
+        }
+        .theme-active{
+            color: ${props => props.theme.drawerlinkIconActiveColor};
+        }
+        .theme-separator{
+            color: ${props => props.theme.themeSeparatorColor};
         }
 
 

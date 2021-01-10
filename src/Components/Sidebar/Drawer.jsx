@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faLink } from '@fortawesome/free-solid-svg-icons'
 import logocompressed from "../../images/logo-compressed.png"
 import logo from "../../images/logo.png"
 import "./Drawer.scss"
@@ -22,9 +22,70 @@ class Drawer extends Component {
           <h6>DEXTboard</h6>
           <ul>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
-                <FontAwesomeIcon icon={faHome} />
+              <a href="javascript:void(0)" className="nav-link active">
+              <i className="fa fa-home fa-2x"></i>
                 <span>DEXTboard</span>
+              </a>
+            </li>
+          </ul>
+          <h6 className="uniswap">uniswap</h6>
+          <ul>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-link fa-2x"></i>
+                <span>Pool Explorer</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-wpexplorer fa-2x"></i>
+                <span>Pair Explorer</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+                <i className="fa fa-ship fa-2x"></i>
+                <span>Big Swap Explorer</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-columns fa-2x"></i>
+                <span>MultiSwap</span>
+              </a>
+            </li>
+          </ul>
+          <h6>Others</h6>
+          <ul>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-user fa-2x"></i>
+                <span>User Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-cogs fa-2x"></i>
+                <span>Configuration</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" className="nav-link">
+              <i className="fa fa-bank fa-2x"></i>
+                <span>Buy DEXT</span>
+              </a>
+            </li>
+          </ul>
+          <h6>Theme</h6>
+          <ul>
+            <li>
+              <a href="javascript:void(0)" className="nav-link theme-mode">
+                <div className="toggle-icon-changer">
+                  <i class="theme-icon theme-icon-left fa fa-sun-o"></i>
+                  <div class="theme-separator">/</div>
+                  <i className="theme-icon theme-icon-right theme-active fa fa-moon-o"></i>
+                </div>
+                <span>Theme Mode</span>
               </a>
             </li>
           </ul>
