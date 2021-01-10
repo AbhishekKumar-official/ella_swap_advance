@@ -2,7 +2,6 @@
     top: 0;
     position: fixed;
     height: 100vh;
-    will-change: transform;
     transition: transform .2s ease-in-out,width .2s ease-in-out;
     width: 4.75rem;
     z-index: 10000;
@@ -22,7 +21,8 @@
     }
     .logo{ display: none; }
     .drawer-body{ 
-        overflow-y: auto; 
+        overflow: hidden;
+        overflow-y: auto;
 
         h6{
             text-transform: uppercase;
@@ -39,7 +39,39 @@
             line-height: 1.5rem;
         }
         ul{
-            
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+
+            li{
+                font-size: .85rem;
+
+                a{
+                    white-space: nowrap;
+                    min-width: 100%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-overflow: clip;
+                    font-size: .85rem;
+                    padding: .9375rem 1.5625rem;
+                    font-weight: 400;
+
+                    svg{
+                        min-width: 1.25rem;
+                        text-align: center;
+                        vertical-align: middle;
+                        transition: color .2s ease;
+                        margin-right: .575rem;
+                    }
+
+                    span{
+                        opacity: 0;
+                        transition: opacity .2s ease-in-out;
+                    }
+                }
+            }
         }
     }
 }
@@ -50,5 +82,12 @@
     .logo{ 
         display: flex; 
         align-content: center;
+    }
+    ul{
+        li{
+            a{
+                span{ opacity: 1; }
+            }
+        }
     }
 }

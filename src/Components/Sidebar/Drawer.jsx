@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 import logocompressed from "../../images/logo-compressed.png"
 import logo from "../../images/logo.png"
 import "./Drawer.scss"
@@ -21,7 +23,7 @@ class Drawer extends Component {
           <ul>
             <li>
               <a href="javascript:void(0)" className="nav-link">
-                <i className="fa fa-home"></i>
+                <FontAwesomeIcon icon={faHome} />
                 <span>DEXTboard</span>
               </a>
             </li>

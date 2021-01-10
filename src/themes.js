@@ -8,7 +8,8 @@ export const lightTheme = {
     drawerHeaderBg: "#20263c",
     drawerHeaderBorder: "#15192a",
     drawertitleBorder: "#15192a",
-    drawertitleColor: "#9ea8b9"
+    drawertitleColor: "#9ea8b9",
+    drawerulBorder: "#15192a",
 }
 export const darkTheme = {
     body : "#020416",
@@ -18,7 +19,8 @@ export const darkTheme = {
     drawerHeaderBg: "#20263c",
     drawerHeaderBorder: "#15192a",
     drawertitleBorder: "#15192a",
-    drawertitleColor: "#9ea8b9"
+    drawertitleColor: "#9ea8b9",
+    drawerulBorder: "#15192a",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -38,6 +40,9 @@ export const GlobalStyle = createGlobalStyle`
         .drawer-body h6{ 
             border-bottom-color: ${props => props.theme.drawertitleBorder};
             color: ${props => props.theme.drawertitleColor};
+        }
+        .drawer-body ul{
+            border-bottom-color: ${props => props.theme.drawerulBorder};
         }
 
 
