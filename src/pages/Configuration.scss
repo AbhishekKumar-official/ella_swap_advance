@@ -1,0 +1,15 @@
+.main-configuration{
+    padding: 0 0 0 4.75rem;
+
+    .main-configuration-container{
+        min-height: calc(100vh - 3.75rem);
+
+        .page-header{
+            .page-subtitle{
+                letter-spacing: .125rem;
+                color: #818ea3;
+                font-size: .625rem;
+            }
+        }
+    }
+}

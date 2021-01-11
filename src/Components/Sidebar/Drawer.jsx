@@ -22,58 +22,58 @@ class Drawer extends Component {
           <h6>DEXTboard</h6>
           <ul>
             <li>
-              <a href="javascript:void(0)" className="nav-link active">
+              <NavLink className="nav-link" activeClassName="active" to="/dextboard">
               <i className="fa fa-home fa-2x"></i>
                 <span>DEXTboard</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
           <h6 className="uniswap">uniswap</h6>
           <ul>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/pool-explorer">
               <i className="fa fa-link fa-2x"></i>
                 <span>Pool Explorer</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/pair-explorer">
               <i className="fa fa-wpexplorer fa-2x"></i>
                 <span>Pair Explorer</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/big-swap-explorer">
                 <i className="fa fa-ship fa-2x"></i>
                 <span>Big Swap Explorer</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/multiswap">
               <i className="fa fa-columns fa-2x"></i>
                 <span>MultiSwap</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
           <h6>Others</h6>
           <ul>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/user-account">
               <i className="fa fa-user fa-2x"></i>
                 <span>User Account</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <NavLink  className="nav-link" activeClassName="active" to="/configuration">
+              <NavLink className="nav-link" activeClassName="active" to="/configuration">
               <i className="fa fa-cogs fa-2x"></i>
                 <span>Configuration</span>
               </NavLink>
             </li>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink className="nav-link" activeClassName="active" to="/buy-dext">
               <i className="fa fa-bank fa-2x"></i>
                 <span>Buy DEXT</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
           <h6>Theme</h6>

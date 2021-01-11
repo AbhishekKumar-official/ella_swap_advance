@@ -19,6 +19,9 @@ export const lightTheme = {
     drawerlinkIconColor: "#cacedb",
     drawerlinkIconActiveColor: "#d0be0d",
     themeSeparatorColor: "#ffffff",
+    scrollbarTrack: "#ffffff",
+    scrollbarThumbBg: "#818ea3",
+    scrollbarThumbBorder: "#ffffff",
 }
 export const darkTheme = {
     body : "#020416",
@@ -40,6 +43,9 @@ export const darkTheme = {
     drawerlinkIconColor: "#cacedb",
     drawerlinkIconActiveColor: "#d0be0d",
     themeSeparatorColor: "#ffffff",
+    scrollbarTrack: "#262C43",
+    scrollbarThumbBg: "#020417",
+    scrollbarThumbBorder: "#262C43",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -90,6 +96,13 @@ export const GlobalStyle = createGlobalStyle`
         .drawer-body ul li a.theme-mode:focus{
             color: ${props => props.theme.drawerlinkColor};
             background-color: ${props => props.theme.drawerlinkBgColor};
+        }
+        ::-webkit-scrollbar-track{
+            background-color: ${props => props.theme.scrollbarTrack};
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: ${props => props.theme.scrollbarThumbBg};
+            border-color: ${props => props.theme.scrollbarThumbBorder};
         }
 
 
