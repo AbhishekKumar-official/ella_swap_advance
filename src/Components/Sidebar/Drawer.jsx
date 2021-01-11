@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faLink } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
+
 import logocompressed from "../../images/logo-compressed.png"
 import logo from "../../images/logo.png"
 import "./Drawer.scss"
@@ -64,10 +64,10 @@ class Drawer extends Component {
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)" className="nav-link">
+              <NavLink  className="nav-link" activeClassName="active" to="/configuration">
               <i className="fa fa-cogs fa-2x"></i>
                 <span>Configuration</span>
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="javascript:void(0)" className="nav-link">
