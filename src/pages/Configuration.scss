@@ -10,6 +10,79 @@
                 color: #818ea3;
                 font-size: .625rem;
             }
+            .page-title{
+                margin: 0;
+                padding: 0;
+                font-size: 1.625rem;
+                letter-spacing: -1px;
+                font-weight: 700;
+                line-height: normal;
+            }
+            small{
+                line-height: 12px;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 300;
+            }
         }
+        .card-header:first-child{
+            border-radius: .4rem .4rem 0 0;
+        }
+        .card-header{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            padding: 1rem;
+
+            .title{
+                line-height: 1.5rem;
+            }
+        }
+        .card-body{
+            .custom-switch{
+                margin-bottom: 10px;
+
+                .custom-control-label{
+                    cursor: pointer;
+                }
+                .custom-control-label:before{
+                    width: 3.125rem;
+                    height: 1.75rem;
+                    border-radius: 100px;
+                    border-width: .0625rem;
+                    border-style: solid;
+                }
+                .custom-control-label:after{
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    border-radius: 6.25rem;
+                    transition: .35s;
+                    top: calc(0.25rem + 3.3px);
+                    left: calc(-2.25rem + 4px);
+                }
+                .custom-control-input:focus:not(:checked) ~ .custom-control-label::before{
+                    border: none;
+                }
+                .custom-control-input:focus ~ .custom-control-label::before{
+                    box-shadow: none;
+                }
+                .custom-control-input:checked ~ .custom-control-label::before{
+                    border-color: #868e96;
+                    background-color: #17c671;
+                }
+                .custom-control-input:checked ~ .custom-control-label::after{
+                    transform: translateX(1.3rem);
+                }
+            } 
+            .custom-select{
+                max-width: 300px;
+            }
+        }
+    }
+    .text-muted{
+        color: #868e96 !important;
+    }
+    small{
+        font-size: 11px;
+        font-weight: 300;
     }
 }

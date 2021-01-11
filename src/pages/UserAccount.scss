@@ -1,0 +1,101 @@
+.main-useraccount{
+    padding: 0 0 0 4.75rem;
+
+    .main-useraccount-container{
+        min-height: calc(100vh - 3.75rem);
+
+        .page-header{
+            .page-subtitle{
+                letter-spacing: .125rem;
+                color: #818ea3;
+                font-size: .625rem;
+            }
+            .page-title{
+                margin: 0;
+                padding: 0;
+                font-size: 1.625rem;
+                letter-spacing: -1px;
+                font-weight: 700;
+                line-height: normal;
+            }
+            small{
+                line-height: 12px;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 300;
+            }
+        }
+        .card-header:first-child{
+            border-radius: .4rem .4rem 0 0;
+        }
+        .card-header{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            padding: 1rem;
+
+            .title{
+                line-height: 1.5rem;
+            }
+        }
+        .auth-form{
+            max-width: 500px;
+
+            .card{
+                border-radius: .625rem .625rem .4rem .4rem;
+            }
+
+            .card-body{
+                overflow: hidden;
+                border-radius: .625rem;
+                padding: 1.875rem;
+
+                .auth-form__title, h5{
+                    font-size: 1.125rem;
+                    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+                    font-weight: 400;
+                }
+                p{
+                    margin-bottom: 1.75rem;
+                }
+                .btn{
+                    font-weight: 400;
+                    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+                    border: 1px solid transparent;
+                    padding: .5625rem 1rem;
+                    font-size: 13px;
+                    line-height: 1.125;
+                    border-radius: .25rem;
+                    transition: all .25s cubic-bezier(.27,.01,.38,1.06);
+                }
+                .btn-info{
+                    color: #fff;
+                    border-color: #00b8d8;
+                    background-color: #00b8d8;
+                    box-shadow: none;
+                }
+                .btn-info:hover {
+                    color: #fff;
+                    background-color: #00a2bf;
+                    border-color: #00a2bf;
+                    box-shadow: 0 5px 15px rgba(0,0,0,.05), 0 4px 10px rgba(0,184,216,.25);
+                }
+                .btn-secondary.disabled, .btn-secondary:disabled {
+                    background-color: #5a6169;
+                    border-color: #5a6169;
+                    box-shadow: none;
+                    cursor: not-allowed;
+                }
+            }
+            .card-muted{
+                box-shadow: inset 0 4px 0 0 #868e96!important;
+            }
+        }
+    }
+    .text-muted{
+        color: #868e96 !important;
+    }
+    small{
+        font-size: 11px;
+        font-weight: 300;
+    }
+}

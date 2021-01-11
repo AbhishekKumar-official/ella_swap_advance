@@ -79,7 +79,7 @@ class Drawer extends Component {
           <h6>Theme</h6>
           <ul>
             <li>
-              <a href="javascript:void(0)" className="nav-link theme-mode">
+              <a href="javascript:void(0)" onClick={this.props.themeToggler} className="nav-link theme-mode">
                 <div className="toggle-icon-changer">
                   <i class="theme-icon theme-icon-left fa fa-sun-o"></i>
                   <div class="theme-separator">/</div>

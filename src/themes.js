@@ -22,6 +22,14 @@ export const lightTheme = {
     scrollbarTrack: "#ffffff",
     scrollbarThumbBg: "#818ea3",
     scrollbarThumbBorder: "#ffffff",
+    configurationpageTitle: "#ffffff",
+    configurationcardBg: "#323852",
+    configurationcardBoxShadow: "0 0 0.5rem rgba(0,0,0,.68)",
+    configurationcardheaderBg: "#323852",
+    configurationcardheaderBorder: "#15192a",
+    configurationcardtitleColor: "#ffffff",
+    configurationcardbodyBg: "rgba(21,25,42,.39)",
+    toggleBg: "hsla(0,0%,100%,.12)",
 }
 export const darkTheme = {
     body : "#020416",
@@ -46,6 +54,27 @@ export const darkTheme = {
     scrollbarTrack: "#262C43",
     scrollbarThumbBg: "#020417",
     scrollbarThumbBorder: "#262C43",
+    configurationpageTitle: "#ffffff",
+    configurationcardBg: "#323852",
+    configurationcardBoxShadow: "0 0 0.5rem rgba(0,0,0,.68)",
+    configurationcardheaderBg: "#323852",
+    configurationcardheaderBorder: "#15192a",
+    configurationcardtitleColor: "#ffffff",
+    configurationcardbodyBg: "rgba(21,25,42,.39)",
+    toggleBg: "hsla(0,0%,100%,.12)",
+    toggleBorder: "#868e96",
+    togglePointerBg: "#e1e5eb",
+    customselectBg: "rgba(0,184,216,.22)",
+    customselectColor: "#00b8d8",
+    customselectBorder: "#00b8d8",
+    customselectHoverColor: "#ffffff",
+    customselectHoverBorder: "#ffffff",
+    customselectFocusShadow: "0 0.313rem 0.719rem rgba(0,123,255,.1), 0 0.156rem 0.125rem rgba(0,0,0,.06)",
+    customselectOptionColor: "#00b8d8",
+    customselectOptionBorder: "#00b8d8",
+    customselectOptionBg: "rgba(0,184,216,.22)",
+    authformCardbodyShadow: "inset 0 4px 0 0 #00b8d8",
+    authformTitleColor: "#ffffff",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -96,6 +125,53 @@ export const GlobalStyle = createGlobalStyle`
         .drawer-body ul li a.theme-mode:focus{
             color: ${props => props.theme.drawerlinkColor};
             background-color: ${props => props.theme.drawerlinkBgColor};
+        }
+        .page-title{
+            color: ${props => props.theme.configurationpageTitle};
+        }
+        .card{
+            background-color: ${props => props.theme.configurationcardBg};
+            box-shadow: ${props => props.theme.configurationcardBoxShadow};
+        }
+        .card-header{
+            background-color: ${props => props.theme.configurationcardheaderBg};
+            border-color: ${props => props.theme.configurationcardheaderBorder};
+        }
+        .card-header .title{
+            color: ${props => props.theme.configurationcardtitleColor};
+        }
+        .card-body{
+            background-color: ${props => props.theme.configurationcardbodyBg};
+        }
+        .custom-control-label:before{
+            background-color: ${props => props.theme.toggleBg};
+            border-color: ${props => props.theme.toggleBorder};
+        }
+        .custom-control-label:after{
+            background-color: ${props => props.theme.togglePointerBg} !important;
+        }
+        .custom-select{
+            background-color: ${props => props.theme.customselectBg};
+            border-color: ${props => props.theme.customselectBorder};
+            color: ${props => props.theme.customselectColor};
+        }
+        .custom-select:hover{
+            border-color: ${props => props.theme.customselectHoverBorder};
+            color: ${props => props.theme.customselectHoverColor};
+        }
+        .custom-select:focus{
+            box-shadow: ${props => props.theme.customselectFocusShadow};
+        }
+        select option{
+            border-color: ${props => props.theme.customselectOptionBorder};
+            color: ${props => props.theme.customselectOptionColor};
+            background-color: ${props => props.theme.customselectOptionBg};
+        }
+        .auth-form .card-body{
+            box-shadow: ${props => props.theme.authformCardbodyShadow};
+        }
+        .auth-form__title{
+            color: ${props => props.theme.authformTitleColor};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
