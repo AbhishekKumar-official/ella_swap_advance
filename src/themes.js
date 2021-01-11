@@ -13,7 +13,7 @@ export const lightTheme = {
     drawerlinkColor: "#cacedb",
     drawerlinkActiveColor: "#00b8d8",
     drawerlinkActiveBgColor: "#2f3446",
-    drawerlinkActiveBoxShadowColor: "#00b8d8",
+    drawerlinkActiveBoxShadowColor: "inset 0.1875rem 0 0 #00b8d8",
     drawerlinkUniswapColor: "#ff2d79",
     drawerlinkUniswapColor: "#ffffff",
     drawerlinkIconColor: "#cacedb",
@@ -31,9 +31,10 @@ export const darkTheme = {
     drawertitleColor: "#9ea8b9",
     drawerulBorder: "#15192a",
     drawerlinkColor: "#cacedb",
+    drawerlinkBgColor: "transparent",
     drawerlinkActiveColor: "#00b8d8",
     drawerlinkActiveBgColor: "#2f3446",
-    drawerlinkActiveBoxShadowColor: "#00b8d8",
+    drawerlinkActiveBoxShadowColor: "inset 0.1875rem 0 0 #00b8d8",
     drawerlinkUniswapBgColor: "#ff2d79",
     drawerlinkUniswapColor: "#ffffff",
     drawerlinkIconColor: "#cacedb",
@@ -69,10 +70,12 @@ export const GlobalStyle = createGlobalStyle`
         .drawer-body ul li a{
             color: ${props => props.theme.drawerlinkColor};
         }
-        .drawer-body ul li a.active{
+        .drawer-body ul li a.active, 
+        .drawer-body ul li a:hover, 
+        .drawer-body ul li a:focus{
             color: ${props => props.theme.drawerlinkActiveColor};
             background-color: ${props => props.theme.drawerlinkActiveBgColor};
-            box-shadow-color: ${props => props.theme.drawerlinkActiveBoxShadowColor};
+            box-shadow: ${props => props.theme.drawerlinkActiveBoxShadowColor};
         }
         .theme-icon{
             color: ${props => props.theme.drawerlinkIconColor};
@@ -82,6 +85,11 @@ export const GlobalStyle = createGlobalStyle`
         }
         .theme-separator{
             color: ${props => props.theme.themeSeparatorColor};
+        }
+        .drawer-body ul li a.theme-mode:hover, 
+        .drawer-body ul li a.theme-mode:focus{
+            color: ${props => props.theme.drawerlinkColor};
+            background-color: ${props => props.theme.drawerlinkBgColor};
         }
 
 
