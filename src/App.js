@@ -5,6 +5,7 @@ import {lightTheme,darkTheme,GlobalStyle} from "./themes"
 import Drawer from "../src/Components/Sidebar/Drawer"
 import Configuration from "./pages/Configuration"
 import UserAccount from "./pages/UserAccount"
+import DextBoard from "./pages/DextBoard"
 import "./App.css"
 
 const StyledDiv = styled.div`
@@ -24,6 +25,7 @@ const App = () => {
         <StyledDiv>
           <Drawer themeToggler={handleThemeToggle}/>
           <Switch>
+            <Route exact path="/dextboard" component={DextBoard}/>
             <Route exact path="/user-account" component={UserAccount}/>
             <Route exact path="/configuration" component={Configuration}/>
           </Switch>
