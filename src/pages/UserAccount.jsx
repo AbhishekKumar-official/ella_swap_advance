@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import banner from "../images/banner.gif"
 import "./UserAccount.scss"
 class UserAccount extends Component {
     render() {
@@ -6,7 +7,7 @@ class UserAccount extends Component {
             <div className="main-useraccount">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
                     <a href="javascript:void(0)">
-                        
+                        <img src={banner} />
                     </a>
                 </div>
                 <div className="main-useraccount-container container-fluid px-4">
