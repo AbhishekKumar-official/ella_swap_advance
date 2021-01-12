@@ -36,8 +36,8 @@ class Configuration extends Component {
                                     </label>
                                     <div class="col d-flex align-items-center">
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="hotpair" />
-                                        <label class="custom-control-label" for="hotpair"></label>
+                                        <input type="checkbox" class="custom-control-input" id="browser" />
+                                        <label class="custom-control-label" for="browser"></label>
                                     </div>
                                     </div>
                                 </div>
