@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
-import "./UserAccount.scss"
+import banner from "../images/banner.png"
+import "./DextBoard.scss"
 class DextBoard extends Component {
     render() {
         return (
-            <div className="main-useraccount">
+            <div className="main-dextboard">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
                     <a href="javascript:void(0)">
-                        
+                        <img src={banner} />
                     </a>
                 </div>
-                <div className="main-useraccount-container container-fluid px-4">
+                <div className="main-dextboard-container container-fluid px-4">
                     <div className="page-header row no-gutters py-4">
                         <div className="col-12 col-md-7 text-left mb-0 pr-4 pb-3">
                             <span class="text-uppercase page-subtitle">v0.2.0 USER ACCOUNT</span>
