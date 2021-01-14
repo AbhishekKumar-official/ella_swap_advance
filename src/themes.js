@@ -75,6 +75,21 @@ export const darkTheme = {
     customselectOptionBg: "rgba(0,184,216,.22)",
     authformCardbodyShadow: "inset 0 4px 0 0 #00b8d8",
     authformTitleColor: "#ffffff",
+    boxHomeHeaderBg: "rgba(55,59,64,.5)",
+    boxHomeHeaderPinkBorder: "#cc0162",
+    boxHomeHeaderImgBg: "#ffffff",
+    boxHomeHeaderImgBoxShadow: "0 0 .5rem rgba(0,0,0,.68)",
+    boxHomeHeaderImgBorder: "#e6e6e6",
+    boxHomeHeaderColor: "#e6e6e6",
+    boxHomeBodyBg: "rgba(0,0,0,.55)",
+    inputContainerInputColor: "#cacedb",
+    inputContainerInputBg: "hsla(0,0%,100%,.12)",
+    inputContainerInputBoxShadow: "box-shadow .25s cubic-bezier(.27,.01,.38,1.06),border .25s cubic-bezier(.27,.01,.38,1.06)",
+    inputContainerInputBorder: "#868e96 !important",
+    buttonHelpBg: "rgba(0,0,0,.5)",
+    buttonHelpBorder: "hsla(0,0%,100%,.7) !important",
+    boxHomeBodyFitHeightH6Color: "#ffffff",
+    boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -172,6 +187,38 @@ export const GlobalStyle = createGlobalStyle`
         }
         .auth-form__title{
             color: ${props => props.theme.authformTitleColor};
+        }
+        .main-dextboard .main-dextboard-container .box-home.card-uniswap .box-home-header{
+            border-color: ${props => props.theme.boxHomeHeaderPinkBorder};
+        }
+        .main-dextboard .main-dextboard-container .box-home .box-home-header{
+            background-color: ${props => props.theme.boxHomeHeaderBg};
+            border-color: ${props => props.theme.boxHomeHeaderBorder};
+        }
+        .box-home-header img{
+            background-color: ${props => props.theme.boxHomeHeaderImgBg};
+            border-color: ${props => props.theme.boxHomeHeaderImgBorder};
+            box-shadow: ${props => props.theme.boxHomeHeadeBoxImgShadow};
+        }
+        .box-home-header h4{
+            color: ${props => props.theme.boxHomeHeaderColor};
+        }
+        .box-home-body{
+            background-color: ${props => props.theme.boxHomeBodyBg};
+        }
+        .box-home-body .input-container input{
+            color: ${props => props.theme.inputContainerInputColor};
+            background-color: ${props => props.theme.inputContainerInputBg};
+            transition: ${props => props.theme.inputContainerInputBoxShadow};
+            border-color: ${props => props.theme.inputContainerInputBorder};
+        }
+        .button-help{
+            background-color: ${props => props.theme.buttonHelpBg};
+            border-color: ${props => props.theme.buttonHelpBorder};
+        }
+        .box-home-body-fit-height h6{
+            border-color: ${props => props.theme.boxHomeBodyFitHeightH6Border};
+            color: ${props => props.theme.boxHomeBodyFitHeightH6Color};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
