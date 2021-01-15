@@ -92,6 +92,16 @@ export const darkTheme = {
     boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
+    listGroupItemBorder: "#15192a",
+    listGroupItemBg: "#323852",
+    listGroupItemInputColor: "#cacedb !important",
+    listGroupItemInputBg: "hsla(0,0%,100%,.12) !important",
+    listGroupItemInputBorder: "#868e96",
+    tableColor: "#cacedb",
+    tableThColor: "#ffffff",
+    tableThBg: "#2f3446",
+    tableTdBorder: "#15192a",
+    pagerColor: "#cacedb",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -152,7 +162,7 @@ export const GlobalStyle = createGlobalStyle`
         }
         .card-header{
             background-color: ${props => props.theme.configurationcardheaderBg};
-            border-color: ${props => props.theme.configurationcardheaderBorder};
+            border-color: ${props => props.theme.configurationcardheaderBorder} !important;
         }
         .card-header .title{
             color: ${props => props.theme.configurationcardtitleColor};
@@ -232,6 +242,28 @@ export const GlobalStyle = createGlobalStyle`
         }
         .header-hot-pairs ul li a{
             color: ${props => props.theme.headerHotPairsColor};
+        }
+        .list-group-item{
+            border-color: ${props => props.theme.listGroupItemBorder};
+            background-color: ${props => props.theme.listGroupItemBg};
+        }
+        .list-group-item input{
+            color: ${props => props.theme.listGroupItemInputColor};
+            background-color: ${props => props.theme.listGroupItemInputBg};
+            border-color: ${props => props.theme.listGroupItemInputBorder};
+        }
+        .table{
+            color: ${props => props.theme.tableColor};
+        }
+        .table thead th{
+            color: ${props => props.theme.tableThColor};
+            background-color: ${props => props.theme.tableThBg};
+        }
+        .table tbody td{
+            border-color: ${props => props.theme.tableTdBorder};
+        }
+        .pager li a{
+            color: ${props => props.theme.pagerColor};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
