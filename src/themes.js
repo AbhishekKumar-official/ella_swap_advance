@@ -90,6 +90,8 @@ export const darkTheme = {
     buttonHelpBorder: "hsla(0,0%,100%,.7) !important",
     boxHomeBodyFitHeightH6Color: "#ffffff",
     boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
+    headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
+    headerHotPairsColor: "#cacedb",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -219,6 +221,17 @@ export const GlobalStyle = createGlobalStyle`
         .box-home-body-fit-height h6{
             border-color: ${props => props.theme.boxHomeBodyFitHeightH6Border};
             color: ${props => props.theme.boxHomeBodyFitHeightH6Color};
+        }
+        .header-hot-pairs{
+            background-color: ${props => props.theme.boxHomeHeaderBg};
+            border-color: ${props => props.theme.headerHotPairsBorder};
+        }
+        .header-hot-pairs h4{
+            border-color: ${props => props.theme.headerHotPairsBorder};
+            color: ${props => props.theme.headerHotPairsColor};
+        }
+        .header-hot-pairs ul li a{
+            color: ${props => props.theme.headerHotPairsColor};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
