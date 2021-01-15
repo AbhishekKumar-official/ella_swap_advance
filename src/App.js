@@ -4,6 +4,7 @@ import styled,{ThemeProvider} from "styled-components"
 import {lightTheme,darkTheme,GlobalStyle} from "./themes"
 import Drawer from "../src/Components/Sidebar/Drawer"
 import Configuration from "./pages/Configuration"
+import PairExplorer from "./pages/PairExplorer"
 import UserAccount from "./pages/UserAccount"
 import DextBoard from "./pages/DextBoard"
 import "./App.css"
@@ -27,6 +28,7 @@ const App = () => {
           <Switch>
             <Route exact path="/dextboard" component={DextBoard}/>
             <Route exact path="/user-account" component={UserAccount}/>
+            <Route exact path="/pair-explorer" component={PairExplorer}/>
             <Route exact path="/configuration" component={Configuration}/>
           </Switch>
         </StyledDiv>
