@@ -3,6 +3,7 @@ import banner from "../images/banner.png"
 import unicorn from "../images/uniswap-logo-home.png"
 import etherscan from "../images/etherscan.png"
 import unicrypt from "../images/unicrypt_v3.svg"
+
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -11,9 +12,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import logocompressed from "../images/logo-compressed.png"
 import $ from "jquery";
+import DataTable from "datatables.net"
 import "./PoolExplorer.scss"
-
-// var dt = require( 'datatables.net' )();
 
 class PoolExplorer extends Component {
     constructor(props) {
@@ -44,8 +44,11 @@ class PoolExplorer extends Component {
           
         
         $('[data-toggle="tooltip"]').tooltip();
-
+        $('#pool-table').dataTable();
             // $('#pool-table').DataTable();
+            // $(document).ready( function () {
+                
+            // } );
     }
     
 
@@ -791,7 +794,17 @@ class PoolExplorer extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                          
+                          
+                          
+                          
+                          
+            
+                          
+                          
+                          
+                          
+                                </div>
                             </div>
                         </div>
                     </div>
