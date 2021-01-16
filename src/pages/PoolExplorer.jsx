@@ -4,8 +4,10 @@ import unicorn from "../images/uniswap-logo-home.png"
 import etherscan from "../images/etherscan.png"
 import unicrypt from "../images/unicrypt_v3.svg"
 import $ from "jquery";
-
 import "./PoolExplorer.scss"
+
+// var dt = require( 'datatables.net' )();
+
 class PoolExplorer extends Component {
     constructor(props) {
         super(props)
@@ -29,6 +31,8 @@ class PoolExplorer extends Component {
           
         
         $('[data-toggle="tooltip"]').tooltip();
+
+            // $('#pool-table').DataTable();
     }
     
 
@@ -147,7 +151,7 @@ class PoolExplorer extends Component {
                             </div>
                             <div className="card-body p-0">
                                 <div className="table-responsive">
-                                    <table className="table">
+                                    <table className="table" id="pool-table">
                                         <thead>
                                             <tr>
                                             <th scope="col">Token</th>
