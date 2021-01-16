@@ -7,6 +7,7 @@ import teamBright from "../images/team-bright.png"
 import coingecko from "../images/coingecko.png"
 import dextWhiteLogo from "../images/dext-white-small.png"
 import CandleChart from "../commons/CandleChart"
+import BasicBarChart from "../commons/BasicBarChart"
 import $ from "jquery";
 import "./PairExplorer.scss"
 class PairExplorer extends Component {
@@ -272,6 +273,7 @@ class PairExplorer extends Component {
                                 <div class="dext-score">
                                     <div class="dext-score-title">DEXT Score</div>
                                     <div class="dext-score-chart">
+                                        <BasicBarChart />
                                         <div class="dext-score-value text-success">99</div>
                                     </div>
                                 </div>
