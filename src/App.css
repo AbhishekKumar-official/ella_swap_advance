@@ -24,27 +24,17 @@ body, html{
     opacity: 1;
 }
 .tooltip-inner{
-      background: #1F1F1F;
-      border: 1px solid #868E96;
+      border-width: 1px;
+      border-style: solid;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
-      color: #CACEDB;
       border-radius: .4rem;
       font-size: .9rem;
-      text-align: left;
+      text-align: center;
       width: auto;
       padding: 0.6rem 1rem;
       line-height: 150%;
       font-weight: 400;
       opacity: 1;
-}
-.bs-tooltip-right .arrow::before{
-    border-right-color: rgb(255, 159, 0) !important;
-}
-.bs-tooltip-left .arrow::before{
-    border-left-color: rgb(255, 159, 0) !important;
-}
-.bs-tooltip-top .arrow::before{
-    border-top-color: #868E96 !important;
 }
 a {
     color: #00b8d8;

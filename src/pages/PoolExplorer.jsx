@@ -172,19 +172,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -207,19 +207,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -242,19 +242,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -277,19 +277,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -312,19 +312,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -347,19 +347,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -382,19 +382,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -417,19 +417,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -452,19 +452,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -487,19 +487,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -522,19 +522,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -557,19 +557,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -592,19 +592,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -627,19 +627,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -662,19 +662,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>
@@ -697,19 +697,19 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Filter by token">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Buy at Uniswap">
                                                 <img src={unicorn} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="0x2d0cc73959d2088fcc2704fba9bb39caef3664d8eb5e7ba6bf3d697be2988c24">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked liquid">
                                                 <img src={unicrypt} />
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
                                             </td>

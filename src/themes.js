@@ -116,6 +116,10 @@ export const darkTheme = {
     autocompleteContainerBorder: "#868e96",
     footerBg: "#20263c",
     footerBorder: "#363946",
+    tooltipInnerBg: "#1F1F1F",
+    tooltipInnerBorder: "#868E96",
+    tooltipInnerColor: "#CACEDB",
+    tooltipBorder: "#868E96",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -311,6 +315,20 @@ export const GlobalStyle = createGlobalStyle`
         footer.bg-white{
             background-color: ${props => props.theme.footerBg} !important;
             border-top-color: ${props => props.theme.footerBorder} !important;
+        }
+        .tooltip-inner{
+            background-color: ${props => props.theme.tooltipInnerBg};
+            border-color: ${props => props.theme.tooltipInnerBorder};
+            color: ${props => props.theme.tooltipInnerColor};
+        }
+        .bs-tooltip-top .arrow::before{
+            border-top-color: ${props => props.theme.tooltipBorder} !important;
+        }
+        .bs-tooltip-left .arrow::before{
+            border-left-color: ${props => props.theme.tooltipBorder} !important;
+        }
+        .bs-tooltip-right .arrow::before{
+            border-right-color: ${props => props.theme.tooltipBorder} !important;
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
