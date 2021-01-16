@@ -110,6 +110,10 @@ export const darkTheme = {
     cardHeaderBtnWhiteBg: "rgba(0,184,216,.22)",
     cardHeaderBtnWhiteBorder: "#00b8d8",
     cardHeaderH6Color: "#ffffff",
+    noCardTxtContentColor: "#ffffff",
+    autocompleteContainerColor: "#cacedb",
+    autocompleteContainerBg: "hsla(0,0%,100%,.12)",
+    autocompleteContainerBorder: "#868e96",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -290,6 +294,17 @@ export const GlobalStyle = createGlobalStyle`
         }
         .card-header h6{
             color: ${props => props.theme.cardHeaderH6Color};
+        }
+        .no-card-txt-content h2{
+            color: ${props => props.theme.noCardTxtContentColor};
+        }
+        .no-card-txt-content h3{
+            color: ${props => props.theme.noCardTxtContentColor};
+        }
+        .autocomplete-container input{
+            color: ${props => props.theme.autocompleteContainerColor};
+            background-color: ${props => props.theme.autocompleteContainerBg};
+            border-color: ${props => props.theme.autocompleteContainerBorder};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
