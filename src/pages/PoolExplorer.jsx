@@ -3,11 +3,30 @@ import banner from "../images/banner.png"
 import unicorn from "../images/uniswap-logo-home.png"
 import etherscan from "../images/etherscan.png"
 import unicrypt from "../images/unicrypt_v3.svg"
+import $ from "jquery";
+
 import "./PoolExplorer.scss"
 class PoolExplorer extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             
+        }
+    }
+    
     stop = () => {
         document.getElementById('marquee').stop();
     }
+    componentDidMount() {
+        $("#marquee").mouseenter(function(){
+            document.getElementById("marquee").stop();
+          });
+          $("#marquee").mouseleave(function(){
+            document.getElementById("marquee").start();
+          });
+    }
+    
 
     render() {
         return (

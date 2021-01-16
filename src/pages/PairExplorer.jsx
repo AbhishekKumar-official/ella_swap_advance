@@ -7,7 +7,7 @@ import teamBright from "../images/team-bright.png"
 import coingecko from "../images/coingecko.png"
 import dextWhiteLogo from "../images/dext-white-small.png"
 import CandleChart from "../commons/CandleChart"
-
+import $ from "jquery";
 import "./PairExplorer.scss"
 class PairExplorer extends Component {
     constructor(props) {
@@ -17,6 +17,16 @@ class PairExplorer extends Component {
              
         }
     }
+
+    componentDidMount() {
+        $("#marquee").mouseenter(function(){
+            document.getElementById("marquee").stop();
+          });
+          $("#marquee").mouseleave(function(){
+            document.getElementById("marquee").start();
+          });
+    }
+    
     
     render() {
         return (

@@ -29,6 +29,7 @@ const App = () => {
         <StyledDiv>
           <Drawer themeToggler={handleThemeToggle}/>
           <Switch>
+            <Route exact path="/" component={DextBoard}/>
             <Route exact path="/dextboard" component={DextBoard}/>
             <Route exact path="/pool-explorer" component={PoolExplorer}/>
             <Route exact path="/big-swap-explorer" component={BigSwapExplorer}/>
