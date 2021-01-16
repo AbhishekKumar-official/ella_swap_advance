@@ -12,7 +12,7 @@ class BasicBarChart extends Component {
         this.state = {
         
             scores: [{
-            data: [99, 99, 400, 400,400]
+            data: [99, 99, 99, 99,99]
           }],
           options: {
             chart: {
@@ -22,6 +22,8 @@ class BasicBarChart extends Component {
             plotOptions: {
               bar: {
                 horizontal: true,
+                columnWidth: '90%',
+                barHeight: '70%',
               }
             },
             dataLabels: {
