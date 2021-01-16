@@ -10,6 +10,7 @@ import DextBoard from "./pages/DextBoard"
 import PoolExplorer from "./pages/PoolExplorer"
 import BigSwapExplorer from "./pages/BigSwapExplorer"
 import MultiSwap from "./pages/MultiSwap"
+import Footer from "./Components/Footer/Footer"
 import "./App.css"
 
 const StyledDiv = styled.div`
@@ -38,6 +39,7 @@ const App = () => {
             <Route exact path="/pair-explorer" component={PairExplorer}/>
             <Route exact path="/configuration" component={Configuration}/>
           </Switch>
+          <Footer />
         </StyledDiv>
       </ThemeProvider>
    
