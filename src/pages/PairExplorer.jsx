@@ -14,10 +14,16 @@ class PairExplorer extends Component {
         super(props)
     
         this.state = {
-             
+            setNone:false
         }
     }
 
+    toggleDiv = () =>{
+        this.setState({
+            setNone : !this.state.setNone
+        })
+        
+    }
     componentDidMount() {
         $("#marquee").mouseenter(function(){
             document.getElementById("marquee").stop();
@@ -29,6 +35,7 @@ class PairExplorer extends Component {
     
     
     render() {
+        const {setNone} = this.state;
         return (
             <div className="main-pairexplorer">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
@@ -173,7 +180,7 @@ class PairExplorer extends Component {
                         </div>
                     </div>
                     <div className="row mb-4">
-                        <div class="col-12 col-md-4 col-xl-2">
+                        <div class={`col-12 col-md-4 col-xl-2 ${setNone === true ? "d-xl-none": null }`}>
                             <div class="card card-small">
                                 <div class="card-header border-bottom position-relative favorites-header">
                                     <a href="#" class="button-help">?</a>
@@ -211,11 +218,11 @@ class PairExplorer extends Component {
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 col-xl-3 text-center text-sm-left mt-3 mt-md-0 pair-container">
+                        <div class="col-12 col-md-8 col-xl-3 text-center text-sm-left mt-3 mt-md-0 pair-container">
                             <ul class="token-info-list pb-3">
                                 <li class="text-right pair-name mt-2 mb-4">
-                                    <button type="button" class="btn btn-icon-absolute float-left d-none d-xl-block btn-collapse-col btn-secondary rounded-right">
-                                        <i class="fa fa-rotate-180 fa-sign-in"></i>
+                                    <button type="button" class={`btn btn-icon-absolute float-left d-none d-xl-block ${setNone ? "btn-success":" btn-collapse-col btn-secondary rounded-right"}`} onClick={()=>this.toggleDiv()}>
+                                        <i class={`fa ${setNone ? "fa-sign-out":"fa-rotate-180 fa-sign-in"}`}></i>
                                     </button>
                                     <button type="button" class="btn btn-info btn-icon-absolute ml-2">
                                         <i class="fa fa-share-alt"></i>
@@ -286,7 +293,7 @@ class PairExplorer extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-xl-7">
+                        <div className={`col-12 ${setNone ? "col-xl-9" : "col-xl-7"}`}>
                             <div className="tradingview">
                             <div className="candle_stick_chart">
                                 <CandleChart />
@@ -295,7 +302,7 @@ class PairExplorer extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12 mb-4 order-xl-1 col-xl-2">
+                        <div className={`col-12 mb-4 order-xl-1 col-xl-2 ${setNone ? "d-xl-none": null}`}>
                             <div class="box-home">
                                 <div class="box-home-header px-3 py-3 m-0 text-right">
                                     <a href="javascript:" class="button-help">?</a>
@@ -371,7 +378,7 @@ class PairExplorer extends Component {
                             </div>
                         </div>
                     </div>
-                        <div className="col-12 order-xl-2 col-xl-10">
+                        <div className={`col-12 order-xl-2  ${setNone ? "col-xl-12":"col-xl-10"}`}>
                             <div className="card card-small mb-4">
                             <div class="card-header border-bottom d-flex justify-content-between align-items-center card-with-tabs text-center text-sm-left">
                                 <div>
