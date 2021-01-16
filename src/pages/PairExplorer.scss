@@ -570,6 +570,11 @@
             }
             .tradingview{
                 height: 510px;
+                width: 100%;
+                text-align: right;
+                transition: all ease .5s;
+
+                .apexcharts-canvas{ width: 100% !important; }
             }
             .token-info-list{
                 list-style: none;
@@ -598,6 +603,7 @@
                     .btn{
                         padding: .5625rem 1rem;
                         line-height: 1.125;
+                        transition: all .25s cubic-bezier(.27,.01,.38,1.06);
                     }
                     .btn-info {
                         color: #fff;
