@@ -1,10 +1,22 @@
 import React, { Component } from 'react'
 import banner from "../images/banner.png"
 import etherscan from "../images/etherscan.png"
+import $ from "jquery";
 import "./BigSwapExplorer.scss"
 class BigSwapExplorer extends Component {
     stop = () => {
         document.getElementById('marquee').stop();
+    }
+
+    componentDidMount() {
+        $("#marquee").mouseenter(function(){
+            document.getElementById("marquee").stop();
+          });
+          $("#marquee").mouseleave(function(){
+            document.getElementById("marquee").start();
+          });
+
+          $('[data-toggle="tooltip"]').tooltip();
     }
 
     render() {
@@ -144,10 +156,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -165,52 +177,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
-                                                <img src={etherscan} className="icon-bg-white-rounded" />
-                                            </a>
-                                            </td>
-                                            </tr>
-                                            <tr>
-                                            <td>
-                                                <a href="javascript:void(0)">WBTC</a>
-                                            </td>
-                                            <td>2021-01-16 05:13:59</td>
-                                            <td className="text-success">buy</td>
-                                            <td>23,485.29635741</td>
-                                            <td>16.05</td>
-                                            <td>$19,759.47</td>
-                                            <td>
-                                            <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
-                                            </td>
-                                            <td>
-                                            <a href="javascript:void(0)">
-                                                <i className="fa fa-wpexplorer pools-icon-warning"></i>
-                                            </a>
-                                            <a href="javascript:void(0)">
-                                                <img src={etherscan} className="icon-bg-white-rounded" />
-                                            </a>
-                                            </td>
-                                            </tr>
-                                            <tr>
-                                            <td>
-                                                <a href="javascript:void(0)">WBTC</a>
-                                            </td>
-                                            <td>2021-01-16 05:13:59</td>
-                                            <td className="text-danger">sell</td>
-                                            <td>23,485.29635741</td>
-                                            <td>16.05</td>
-                                            <td>$19,759.47</td>
-                                            <td>
-                                            <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
-                                            </td>
-                                            <td>
-                                            <a href="javascript:void(0)">
-                                                <i className="fa fa-wpexplorer pools-icon-warning"></i>
-                                            </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -228,10 +198,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-warning"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -249,10 +219,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -270,10 +240,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -291,10 +261,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -312,10 +282,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -333,10 +303,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -354,10 +324,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -375,10 +345,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -396,10 +366,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -417,10 +387,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -438,10 +408,10 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -459,10 +429,52 @@ class BigSwapExplorer extends Component {
                                             <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
                                                 <i className="fa fa-wpexplorer pools-icon-warning"></i>
                                             </a>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
+                                                <img src={etherscan} className="icon-bg-white-rounded" />
+                                            </a>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                            <td>
+                                                <a href="javascript:void(0)">WBTC</a>
+                                            </td>
+                                            <td>2021-01-16 05:13:59</td>
+                                            <td className="text-danger">sell</td>
+                                            <td>23,485.29635741</td>
+                                            <td>16.05</td>
+                                            <td>$19,759.47</td>
+                                            <td>
+                                            <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
+                                            </td>
+                                            <td>
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
+                                                <i className="fa fa-wpexplorer pools-icon-warning"></i>
+                                            </a>
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
+                                                <img src={etherscan} className="icon-bg-white-rounded" />
+                                            </a>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                            <td>
+                                                <a href="javascript:void(0)">WBTC</a>
+                                            </td>
+                                            <td>2021-01-16 05:13:59</td>
+                                            <td className="text-danger">sell</td>
+                                            <td>23,485.29635741</td>
+                                            <td>16.05</td>
+                                            <td>$19,759.47</td>
+                                            <td>
+                                            <a href="javascript:void(0)" class="badge badge-light"> 3.657% </a>
+                                            </td>
+                                            <td>
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Show live data">
+                                                <i className="fa fa-wpexplorer pools-icon-warning"></i>
+                                            </a>
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>

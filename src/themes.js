@@ -120,6 +120,9 @@ export const darkTheme = {
     tooltipInnerBorder: "#868E96",
     tooltipInnerColor: "#CACEDB",
     tooltipBorder: "#868E96",
+    MuiDialogPaperBg: "#262c43",
+    MuiDialogPaperColor: "#cacedb",
+    MuiDialogActionsBorder: "#15192a",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -329,6 +332,16 @@ export const GlobalStyle = createGlobalStyle`
         }
         .bs-tooltip-right .arrow::before{
             border-right-color: ${props => props.theme.tooltipBorder} !important;
+        }
+        .MuiDialog-paper{ 
+            background-color: ${props => props.theme.MuiDialogPaperBg} !important;
+            color: ${props => props.theme.MuiDialogPaperColor} !important;
+        }
+        .MuiTypography-colorTextSecondary{
+            color: ${props => props.theme.MuiDialogPaperColor} !important;
+        }
+        .MuiDialogActions-root{{
+            border-color: ${props => props.theme.MuiDialogActionsBorder};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
