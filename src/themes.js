@@ -114,6 +114,8 @@ export const darkTheme = {
     autocompleteContainerColor: "#cacedb",
     autocompleteContainerBg: "hsla(0,0%,100%,.12)",
     autocompleteContainerBorder: "#868e96",
+    footerBg: "#20263c",
+    footerBorder: "#363946",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -305,6 +307,10 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.autocompleteContainerColor};
             background-color: ${props => props.theme.autocompleteContainerBg};
             border-color: ${props => props.theme.autocompleteContainerBorder};
+        }
+        footer.bg-white{
+            background-color: ${props => props.theme.footerBg} !important;
+            border-top-color: ${props => props.theme.footerBorder} !important;
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};

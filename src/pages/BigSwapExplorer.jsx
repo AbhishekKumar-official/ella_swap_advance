@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import banner from "../images/banner.png"
-import unicorn from "../images/uniswap-logo-home.png"
 import etherscan from "../images/etherscan.png"
-import unicrypt from "../images/unicrypt_v3.svg"
 import "./BigSwapExplorer.scss"
 class BigSwapExplorer extends Component {
     stop = () => {
