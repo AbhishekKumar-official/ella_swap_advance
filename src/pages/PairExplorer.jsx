@@ -32,6 +32,8 @@ class PairExplorer extends Component {
           $("#marquee").mouseleave(function(){
             document.getElementById("marquee").start();
           });
+
+          $('[data-toggle="tooltip"]').tooltip();
     }
     
     
@@ -124,28 +126,28 @@ class PairExplorer extends Component {
                                         <strong class="d-inline-block align-middle">DEXT</strong>
                                     </span>
                                     <div class="mt-2 d-inline-block align-bottom">
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="View Contract">
                                         <img src={etherscan} />
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Blocked Liquid">
                                         <img src={unicrypt} class="ml-2" />
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Team Lock">
                                         <img src={teamBright} class="ml-2 team-lock-icon" />
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="See in Coingecko">
                                         <img src={coingecko} class="ml-2" />
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Email: info@dextools.io">
                                             <i class="fa fa-envelope text-light ml-2"></i>
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Telegram">
                                             <i class="fa fa-telegram text-light ml-2"></i>
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Twitter">
                                             <i class="fa fa-twitter text-light ml-2"></i>
                                         </a>
-                                        <a target="blank" href="javascript:void(0)">
+                                        <a target="blank" href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="left" title="Web">
                                             <i class="fa fa-desktop text-light ml-2"></i>
                                         </a>
                                     </div>
@@ -154,11 +156,11 @@ class PairExplorer extends Component {
                                         <div class="d-inline-block mt-2">
                                             <small class="p-0 m-0 text-muted">Token contract: 
                                             <span class="mr-1">...32478a9fe55197166</span>
-                                            <a href="javascript:;" placement="top" class="fa fa-copy text-muted text-decoration-none d-inline-block"></a>
+                                            <a href="javascript:;" ref = "dataTip" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" class="fa fa-copy text-muted text-decoration-none d-inline-block"></a>
                                             </small>
                                             <small class="p-0 ml-2 m-0 text-muted">
                                                 <span class="mr-1">- Pair</span>
-                                                <a href="javascript:;" placement="top" class="fa fa-copy text-muted text-decoration-none d-inline-block"></a>
+                                                <a href="javascript:;" ref = "dataTip" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" class="fa fa-copy text-muted text-decoration-none d-inline-block"></a>
                                             </small>
                                         </div>
                                     </div>
@@ -326,7 +328,7 @@ class PairExplorer extends Component {
                                                 </a>
                                                 </p>
                                                 <span class="votes d-block text-right mt-2">
-                                                    <span>
+                                                    <span data-toggle="tooltip" data-placement="top" title="Only subscribed users can upvote news!">
                                                         <i class="fa mr-1 fa-thumbs-o-up"></i>25 
                                                     </span>
                                                 </span>
@@ -349,7 +351,7 @@ class PairExplorer extends Component {
                                                 </a>
                                                 </p>
                                                 <span class="votes d-block text-right mt-2">
-                                                    <span>
+                                                    <span data-toggle="tooltip" data-placement="top" title="Only subscribed users can upvote news!">
                                                         <i class="fa mr-1 fa-thumbs-o-up"></i>31
                                                     </span>
                                                 </span>
@@ -367,7 +369,7 @@ class PairExplorer extends Component {
                                                 </a>
                                                 </p>
                                                 <span class="votes d-block text-right mt-2">
-                                                    <span>
+                                                    <span data-toggle="tooltip" data-placement="top" title="Only subscribed users can upvote news!">
                                                         <i class="fa mr-1 fa-thumbs-o-up"></i>32
                                                     </span>
                                                 </span>
@@ -386,11 +388,11 @@ class PairExplorer extends Component {
                                 <div>
                                     <div role="group" aria-label="Page actions" class="tabs btn-group btn-group-toggle d-inline-flex mb-0 p-0 mb-2 mb-sm-0">
                                         <a href="#" class="btn btn-white active">Trade History</a>
-                                        <span placement="top" class="btn btn-white disabled"> My positions </span>
-                                        <span placement="top" class="btn btn-white"> Price Alerts </span>
+                                        <span data-toggle="tooltip" data-placement="top" title="Only subscribed users can add positions" class="btn btn-white disabled"> My positions </span>
+                                        <span data-toggle="tooltip" data-placement="top" title="Add pair to favourites first" class="btn btn-white"> Price Alerts </span>
                                     </div>
                                     <h6 class="m-0 d-inline-block align-middle mx-3"> DEXT (last 309 trades) 
-                                    <a class="d-inline-block wallet-filter-modal">
+                                    <a class="d-inline-block wallet-filter-modal" data-toggle="tooltip" data-placement="left" title="Show saved wallets to filter">
                                         <i class="fa fa-filter ml-2 row-icon"></i>
                                     </a>
                                     </h6>
@@ -423,7 +425,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -439,7 +441,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -455,7 +457,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -467,13 +469,13 @@ class PairExplorer extends Component {
                                             <td>0.00008529</td>
                                             <td>400.00</td>
                                             <td>0.03411429
-                                            <i class="fa fa-user-secret icon-table ml-1 text-danger"></i>
+                                            <i class="fa fa-user-secret icon-table ml-1 text-danger" data-toggle="tooltip" data-placement="left" title="Drained: 0.03949052ETH"></i>
                                             </td>
                                             <td>
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -489,7 +491,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -505,7 +507,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -521,7 +523,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -537,7 +539,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -553,7 +555,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -569,7 +571,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -585,7 +587,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -601,7 +603,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -617,7 +619,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -633,7 +635,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -649,7 +651,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
@@ -665,7 +667,7 @@ class PairExplorer extends Component {
                                             <a href="javascript:void(0)"> ...0b83b2358485 </a>
                                             </td>
                                             <td>
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="View TX">
                                                 <img src={etherscan} className="icon-bg-white-rounded" />
                                             </a>
                                             </td>
