@@ -122,7 +122,7 @@ class PoolExplorer extends Component {
                                 <a href="#">View last 4h</a>
                                 </h6>
                             </div>
-                            <div className="card-body p-0 pb-3">
+                            <div className="card-body p-0">
                                 <div className="table-responsive">
                                     <table class="table">
                                         <thead>
@@ -711,37 +711,37 @@ class PoolExplorer extends Component {
                                         <div class="page-count"> 397 total </div>
                                         <div class="datatable-pager">
                                             <ul class="pager">
-                                                <li>
+                                                <li className="backward">
                                                     <a role="button" aria-label="go to first page" href="javascript:void(0)">
                                                         <i class="fa fa-step-backward"></i>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li className="chevron-left">
                                                     <a role="button" aria-label="go to previous page" href="javascript:void(0)">
                                                         <i class="fa fa-chevron-left"></i>
                                                     </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 23">
-                                                    <a href="javascript:void(0)"> 23 </a>
+                                                <li role="button" class="pages" aria-label="page 1">
+                                                    <a href="javascript:void(0)"> 1 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 24">
-                                                    <a href="javascript:void(0)"> 24 </a>
+                                                <li role="button" class="pages" aria-label="page 2">
+                                                    <a href="javascript:void(0)"> 2 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 25">
-                                                    <a href="javascript:void(0)"> 25 </a>
+                                                <li role="button" class="pages" aria-label="page 3">
+                                                    <a href="javascript:void(0)"> 3 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 26">
-                                                    <a href="javascript:void(0)"> 26 </a>
+                                                <li role="button" class="pages" aria-label="page 4">
+                                                    <a href="javascript:void(0)"> 4 </a>
                                                 </li>
-                                                <li role="button" class="pages active" aria-label="page 27">
-                                                    <a href="javascript:void(0)"> 27 </a>
+                                                <li role="button" class="pages active" aria-label="page 5">
+                                                    <a href="javascript:void(0)"> 5 </a>
                                                 </li>
-                                                <li class="disabled">
+                                                <li class="disabled chevron-right">
                                                     <a role="button" aria-label="go to next page" href="javascript:void(0)">
                                                         <i class="fa fa-chevron-right"></i>
                                                     </a>
                                                 </li>
-                                                <li class="disabled">
+                                                <li class="disabled forward">
                                                     <a role="button" aria-label="go to last page" href="javascript:void(0)">
                                                         <i class="fa fa-step-forward"></i>
                                                     </a>

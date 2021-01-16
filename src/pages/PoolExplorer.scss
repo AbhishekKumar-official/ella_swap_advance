@@ -6,6 +6,7 @@
     }
     a:hover{
         color: #0056b3;
+        text-decoration: none;
     }
         .header-hot-pairs{
             width: 100%;
@@ -229,6 +230,11 @@
                                 color: #ffffff;
                             }
                         }
+                        tr:hover{
+                            transition-property: background;
+                            transition-duration: .3s;
+                            transition-timing-function: linear;
+                        }
                     }
                 }
                 .datatable-footer{
@@ -271,6 +277,7 @@
                                     display: inline-block;
                                     list-style: none;
                                     outline: 0;
+                                    min-width: 30px;
 
                                     a{
                                         height: 22px;
@@ -292,7 +299,30 @@
                                             padding: 0 3px;
                                         }
                                     }
+                                    a:hover{
+                                        background-color: hsla(0,0%,62%,.2);
+                                    }
                                 }
+                                    li.backward a,
+                                    li.forward a,
+                                    li.chevron-left a,
+                                    li.chevron-right a{
+                                        width: 44px;
+                                    }
+                                    li.disabled a{
+                                        color: rgba(0,0,0,.26) !important;
+                                        background-color: transparent;
+                                    }
+                                    li.disabled a:hover{
+                                        cursor: not-allowed;
+                                    }
+                                    li.backward a,
+                                    li.forward a{
+                                        font-size: 14px;
+                                    }
+                                    li.active a{
+                                        background-color: hsla(0,0%,62%,.2);
+                                    }
                             }
                         }
                     }

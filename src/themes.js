@@ -101,6 +101,7 @@ export const darkTheme = {
     tableThColor: "#ffffff",
     tableThBg: "#2f3446",
     tableTdBorder: "#15192a",
+    tableHoverBg: "hsla(0,0%,100%,.1)",
     pagerColor: "#cacedb",
 }
 
@@ -241,7 +242,7 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.headerHotPairsColor};
         }
         .header-hot-pairs ul li a{
-            color: ${props => props.theme.headerHotPairsColor};
+            color: ${props => props.theme.headerHotPairsColor} !important;
         }
         .list-group-item{
             border-color: ${props => props.theme.listGroupItemBorder};
@@ -259,11 +260,14 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.tableThColor};
             background-color: ${props => props.theme.tableThBg};
         }
+        .table tbody tr:hover{
+            background-color: ${props => props.theme.tableHoverBg};
+        }
         .table tbody td{
             border-color: ${props => props.theme.tableTdBorder};
         }
         .pager li a{
-            color: ${props => props.theme.pagerColor};
+            color: ${props => props.theme.pagerColor} !important;
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
