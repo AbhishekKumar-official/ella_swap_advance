@@ -573,6 +573,7 @@
                 width: 100%;
                 text-align: right;
                 transition: all ease .5s;
+                overflow: hidden;
 
                 .apexcharts-canvas{ width: 100% !important; }
             }
