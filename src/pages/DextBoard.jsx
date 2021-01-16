@@ -477,7 +477,7 @@ class DextBoard extends Component {
                 <img src={logocompressed} alt=""/>
             </DialogTitle>
             <DialogContent>
-              <DialogContentText id="alert-dialog-description">
+              <DialogContentText id="alert-dialog-description" className="mb-0">
               These are the most upvoted news by the DEXT community during the last days.
               </DialogContentText>
             </DialogContent>

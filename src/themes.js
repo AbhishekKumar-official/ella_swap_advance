@@ -341,7 +341,7 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.MuiDialogPaperColor} !important;
         }
         .MuiDialogActions-root{{
-            border-color: ${props => props.theme.MuiDialogActionsBorder};
+            border-top-color: ${props => props.theme.MuiDialogActionsBorder};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};

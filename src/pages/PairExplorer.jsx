@@ -8,6 +8,13 @@ import coingecko from "../images/coingecko.png"
 import dextWhiteLogo from "../images/dext-white-small.png"
 import CandleChart from "../commons/CandleChart"
 import BasicBarChart from "../commons/BasicBarChart"
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import logocompressed from "../images/logo-compressed.png"
 import $ from "jquery";
 import "./PairExplorer.scss"
 class PairExplorer extends Component {
@@ -15,8 +22,27 @@ class PairExplorer extends Component {
         super(props)
     
         this.state = {
-            setNone:false
+            setNone:false,
+            hotpair:false,
+            buttonhelp:false,
+            share:false
         }
+    }
+
+    handleCloseHotPair = () => {
+        this.setState({
+            hotpair: false
+        })
+    }
+    handleCloseButtonHelp = () => {
+        this.setState({
+            buttonhelp: false
+        })
+    }
+    handleCloseShare = () => {
+        this.setState({
+            share: false
+        })
     }
 
     toggleDiv = () =>{
@@ -38,7 +64,7 @@ class PairExplorer extends Component {
     
     
     render() {
-        const {setNone} = this.state;
+        const {setNone,hotpair,buttonhelp,share} = this.state;
         return (
             <div className="main-pairexplorer">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
@@ -53,7 +79,7 @@ class PairExplorer extends Component {
                         </h4>
                         <h4 class="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
                         <i class="fa fa-fire ml-2"></i>
-                        <a href="#" class="hots-info fa fa-question-circle ml-2"></a>
+                        <a href="#" class="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
                         </h4>
                         <ul class="p-0 m-0 no-sponsor">
                             <div className="marquee-wrap">
@@ -186,7 +212,7 @@ class PairExplorer extends Component {
                         <div class={`col-12 col-md-4 col-xl-2 ${setNone === true ? "d-xl-none": null }`}>
                             <div class="card card-small">
                                 <div class="card-header border-bottom position-relative favorites-header">
-                                    <a href="#" class="button-help">?</a>
+                                    <a href="#" class="button-help" onClick={()=>{this.setState({buttonhelp:true})}}>?</a>
                                     <h6 class="m-0 mr-4">Favorites 
                                     <a href="#" class="d-xl-none">
                                         <i class="fa mx-3 float-right fa-eye-slash"></i>
@@ -227,7 +253,7 @@ class PairExplorer extends Component {
                                     <button type="button" class={`btn btn-icon-absolute float-left d-none d-xl-block ${setNone ? "btn-success":" btn-collapse-col btn-secondary rounded-right"}`} onClick={()=>this.toggleDiv()}>
                                         <i class={`fa ${setNone ? "fa-sign-out":"fa-rotate-180 fa-sign-in"}`}></i>
                                     </button>
-                                    <button type="button" class="btn btn-info btn-icon-absolute ml-2">
+                                    <button type="button" class="btn btn-info btn-icon-absolute ml-2" onClick={()=>{this.setState({share:true})}}>
                                         <i class="fa fa-share-alt"></i>
                                     </button>
                                     <button type="button" class="btn btn-success btn-icon-absolute ml-2">
@@ -726,6 +752,68 @@ class PairExplorer extends Component {
                     </div>
             <div>
             </div>
+            <Dialog
+            open={hotpair}
+            onClose={this.handleCloseHotPair}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              These pairs are the most viewed by DEXT users in real time, they are shown with a 1 minute delay for free users. These pairs are decided by the community visits and do not represent any investment advice or endorsement from the DEXTools team.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseHotPair} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          <Dialog
+            open={buttonhelp}
+            onClose={this.handleCloseButtonHelp}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              Premium & Standard members unlimited number of saved pairs.
+Free members maximum 4 saved pairs.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseButtonHelp} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          <Dialog
+            open={share}
+            onClose={this.handleCloseShare}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title" className="share-header">
+            Share on Social Media
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              Premium & Standard members unlimited number of saved pairs.
+Free members maximum 4 saved pairs.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseShare} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
             </div>
         )
     }

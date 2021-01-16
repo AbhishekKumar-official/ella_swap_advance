@@ -46,12 +46,12 @@ a:hover {
     max-width: 500px !important;
     border-radius: .5rem !important;
     box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1) !important;
-    padding: 1.875rem 0 0;
 }
 .MuiDialogTitle-root{
-    padding: 0 2.1875rem !important;
+    padding: 1.875rem 2.1875rem 0 !important;
     text-align: center;
     margin-bottom: 1rem !important;
+    color: #ffffff;
 }
 .MuiDialogContent-root{
     padding: 0 2.1875rem !important;
@@ -59,8 +59,8 @@ a:hover {
 }
 .MuiDialogActions-root{
     padding: .9375rem 2.1875rem !important;
-    border-width: 1px;
-    border-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
 }
 .MuiDialog-paper .btn-info {
     color: #fff;
@@ -82,4 +82,11 @@ a:hover {
 }
 .MuiDialog-paper .btn-info:focus{
     box-shadow: 0 0 3px rgba(0,184,216,.15), 0 3px 15px rgba(0,184,216,.2), 0 2px 5px rgba(0,0,0,.1)
+}
+.MuiDialogTitle-root.share-header{
+    padding: .9375rem 2.1875rem !important;
+    text-align: left;
+}
+.MuiDialogTitle-root.share-header h2{
+    font-size: 1rem;
 }
