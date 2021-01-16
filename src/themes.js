@@ -103,6 +103,12 @@ export const darkTheme = {
     tableTdBorder: "#15192a",
     tableHoverBg: "hsla(0,0%,100%,.1)",
     pagerColor: "#cacedb",
+    imgLogoBg: "#ffffff",
+    dextScoreBorder: "#262c43",
+    dextScoreBg: "rgba(55,59,64,.5)",
+    cardHeaderBtnWhiteColor: "#00b8d8",
+    cardHeaderBtnWhiteBg: "rgba(0,184,216,.22)",
+    cardHeaderBtnWhiteBorder: "#00b8d8",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -201,10 +207,10 @@ export const GlobalStyle = createGlobalStyle`
         .auth-form__title{
             color: ${props => props.theme.authformTitleColor};
         }
-        .main-dextboard .main-dextboard-container .box-home.card-uniswap .box-home-header{
+        .box-home.card-uniswap .box-home-header{
             border-color: ${props => props.theme.boxHomeHeaderPinkBorder};
         }
-        .main-dextboard .main-dextboard-container .box-home .box-home-header{
+        .box-home .box-home-header{
             background-color: ${props => props.theme.boxHomeHeaderBg};
             border-color: ${props => props.theme.boxHomeHeaderBorder};
         }
@@ -268,6 +274,18 @@ export const GlobalStyle = createGlobalStyle`
         }
         .pager li a{
             color: ${props => props.theme.pagerColor} !important;
+        }
+        .page-title .img-logo img{
+            background-color: ${props => props.theme.imgLogoBg};
+        }
+        .dext-score{
+            border-color: ${props => props.theme.dextScoreBorder};
+            background-color: ${props => props.theme.dextScoreBg};
+        }
+        .card-header .btn-white{
+            color: ${props => props.theme.cardHeaderBtnWhiteColor};
+            background-color: ${props => props.theme.cardHeaderBtnWhiteBg};
+            border-color: ${props => props.theme.cardHeaderBtnWhiteBorder};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};

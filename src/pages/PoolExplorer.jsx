@@ -17,66 +17,66 @@ class PoolExplorer extends Component {
                         <img src={banner} />
                     </a>
                 </div>
-                <div class="header-hot-pairs">
-                        <h4 class="py-1 pl-2 pr-2 m-0 text-center eth-price d-none d-md-inline-block"> ETH: $1153.19 </h4>
-                        <h4 class="py-1 pl-2 pr-2 m-0 text-center gas-price d-none d-md-inline-block">
-                            <i class="fa fa-dashboard mr-2"></i>126 GWEI 
+                <div className="header-hot-pairs">
+                        <h4 className="py-1 pl-2 pr-2 m-0 text-center eth-price d-none d-md-inline-block"> ETH: $1153.19 </h4>
+                        <h4 className="py-1 pl-2 pr-2 m-0 text-center gas-price d-none d-md-inline-block">
+                            <i className="fa fa-dashboard mr-2"></i>126 GWEI 
                         </h4>
-                        <h4 class="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
-                        <i class="fa fa-fire ml-2"></i>
-                        <a href="#" class="hots-info fa fa-question-circle ml-2"></a>
+                        <h4 className="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
+                        <i className="fa fa-fire ml-2"></i>
+                        <a href="#" className="hots-info fa fa-question-circle ml-2"></a>
                         </h4>
-                        <ul class="p-0 m-0 no-sponsor">
+                        <ul className="p-0 m-0 no-sponsor">
                             <div className="marquee-wrap">
                             <marquee direction="left" behavior="scroll" id="marquee" onmouseover={()=>this.stop()} onmouseout={()=>this.start()}>
                             <li>
-                                <a class="ml-3 py-2 hot-pair first" data-hot-pair="POOLZ" data-hot-pair-number="0" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair first" data-hot-pair="POOLZ" data-hot-pair-number="0" href="javascript:void(0)">
                                     <span>#1</span> POOLZ 
-                                    <span class="badge badge-success mr-1 align-middle ng-star-inserted"> N </span>
+                                    <span className="badge badge-success mr-1 align-middle ng-star-inserted"> N </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="YOP" data-hot-pair-number="1" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="YOP" data-hot-pair-number="1" href="javascript:void(0)">
                                     <span>#2</span> YOP 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="PROS" data-hot-pair-number="2" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="PROS" data-hot-pair-number="2" href="javascript:void(0)">
                                     <span>#3</span> PROS 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="COMBO" data-hot-pair-number="3" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="COMBO" data-hot-pair-number="3" href="javascript:void(0)">
                                     <span>#4</span> COMBO 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="ROOK" data-hot-pair-number="4" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="ROOK" data-hot-pair-number="4" href="javascript:void(0)">
                                     <span>#5</span> ROOK 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="pBTC35A" data-hot-pair-number="5" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="pBTC35A" data-hot-pair-number="5" href="javascript:void(0)">
                                     <span>#6</span> pBTC35A 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="SPI" data-hot-pair-number="6" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="SPI" data-hot-pair-number="6" href="javascript:void(0)">
                                     <span>#7</span> SPI 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="WISE" data-hot-pair-number="7" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="WISE" data-hot-pair-number="7" href="javascript:void(0)">
                                     <span>#8</span> WISE 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="ARCH" data-hot-pair-number="8" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="ARCH" data-hot-pair-number="8" href="javascript:void(0)">
                                     <span>#9</span> ARCH 
                                 </a>
                             </li>
                             <li>
-                                <a class="ml-3 py-2 hot-pair" data-hot-pair="DSD" data-hot-pair-number="9" href="javascript:void(0)">
+                                <a className="ml-3 py-2 hot-pair" data-hot-pair="DSD" data-hot-pair-number="9" href="javascript:void(0)">
                                     <span>#10</span> DSD 
                                 </a>
                             </li>
@@ -85,27 +85,27 @@ class PoolExplorer extends Component {
                         </ul>
                     </div>
                     <div className="main-poolexplorer-container px-4">
-                    <div class="page-header row no-gutters py-4">
-                        <div class="col-12 col-md-8 text-left mb-0 pr-4 pb-3">
-                            <span class="text-uppercase page-subtitle">v0.1.3 UNISWAP POOL TOOLS</span>
-                            <h3 class="page-title">Pool Explorer</h3>
-                            <small class="p-0 mt-2 m-0 text-muted">Search for new pools, add or remove liquidity in a pair.</small>
+                    <div className="page-header row no-gutters py-4">
+                        <div className="col-12 col-md-8 text-left mb-0 pr-4 pb-3">
+                            <span className="text-uppercase page-subtitle">v0.1.3 UNISWAP POOL TOOLS</span>
+                            <h3 className="page-title">Pool Explorer</h3>
+                            <small className="p-0 mt-2 m-0 text-muted">Search for new pools, add or remove liquidity in a pair.</small>
                         </div>
-                        <div class="col-md-4 text-left mb-0">
-                            <div class="card card-small">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item px-3">
-                                        <div class="form-row mt-3">
-                                            <div class="form-group col-4">
-                                                <select class="custom-select custom-select-sm">
+                        <div className="col-md-4 text-left mb-0">
+                            <div className="card card-small">
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item px-3">
+                                        <div className="form-row mt-3">
+                                            <div className="form-group col-4">
+                                                <select className="custom-select custom-select-sm">
                                                     <option value="">View all</option>
                                                     <option value="REMOVE">Removes</option>
                                                     <option value="ADD">Adds</option>
                                                     <option value="NEW">New</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-8">
-                                                <input type="text" class="form-control" placeholder="Filter by token" />
+                                            <div className="form-group col-8">
+                                                <input type="text" className="form-control" placeholder="Filter by token" />
                                             </div>
                                         </div>
                                     </li>
@@ -116,15 +116,15 @@ class PoolExplorer extends Component {
                     <div className="row">
                         <div className="col">
                             <div className="card card-small mb-4">
-                            <div class="card-header border-bottom">
-                                <h6 class="m-0">Pools activity (last 1 hour(s))
-                                <a href="#" class="ml-4">View last 2h</a> - 
+                            <div className="card-header border-bottom">
+                                <h6 className="m-0">Pools activity (last 1 hour(s))
+                                <a href="#" className="ml-4">View last 2h</a> - 
                                 <a href="#">View last 4h</a>
                                 </h6>
                             </div>
                             <div className="card-body p-0">
                                 <div className="table-responsive">
-                                    <table class="table">
+                                    <table className="table">
                                         <thead>
                                             <tr>
                                             <th scope="col">Token</th>
@@ -706,44 +706,44 @@ class PoolExplorer extends Component {
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="datatable-footer">
-                                    <div class="datatable-footer-inner">
-                                        <div class="page-count"> 397 total </div>
-                                        <div class="datatable-pager">
-                                            <ul class="pager">
+                                <div className="datatable-footer">
+                                    <div className="datatable-footer-inner">
+                                        <div className="page-count"> 397 total </div>
+                                        <div className="datatable-pager">
+                                            <ul className="pager">
                                                 <li className="backward">
                                                     <a role="button" aria-label="go to first page" href="javascript:void(0)">
-                                                        <i class="fa fa-step-backward"></i>
+                                                        <i className="fa fa-step-backward"></i>
                                                     </a>
                                                 </li>
                                                 <li className="chevron-left">
                                                     <a role="button" aria-label="go to previous page" href="javascript:void(0)">
-                                                        <i class="fa fa-chevron-left"></i>
+                                                        <i className="fa fa-chevron-left"></i>
                                                     </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 1">
+                                                <li role="button" className="pages" aria-label="page 1">
                                                     <a href="javascript:void(0)"> 1 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 2">
+                                                <li role="button" className="pages" aria-label="page 2">
                                                     <a href="javascript:void(0)"> 2 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 3">
+                                                <li role="button" className="pages" aria-label="page 3">
                                                     <a href="javascript:void(0)"> 3 </a>
                                                 </li>
-                                                <li role="button" class="pages" aria-label="page 4">
+                                                <li role="button" className="pages" aria-label="page 4">
                                                     <a href="javascript:void(0)"> 4 </a>
                                                 </li>
-                                                <li role="button" class="pages active" aria-label="page 5">
+                                                <li role="button" className="pages active" aria-label="page 5">
                                                     <a href="javascript:void(0)"> 5 </a>
                                                 </li>
-                                                <li class="disabled chevron-right">
+                                                <li className="disabled chevron-right">
                                                     <a role="button" aria-label="go to next page" href="javascript:void(0)">
-                                                        <i class="fa fa-chevron-right"></i>
+                                                        <i className="fa fa-chevron-right"></i>
                                                     </a>
                                                 </li>
-                                                <li class="disabled forward">
+                                                <li className="disabled forward">
                                                     <a role="button" aria-label="go to last page" href="javascript:void(0)">
-                                                        <i class="fa fa-step-forward"></i>
+                                                        <i className="fa fa-step-forward"></i>
                                                     </a>
                                                 </li>
                                             </ul>

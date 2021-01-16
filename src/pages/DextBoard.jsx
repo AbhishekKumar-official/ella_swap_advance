@@ -18,25 +18,25 @@ class DextBoard extends Component {
                     </a>
                 </div>
                 <div className="main-dextboard-container container-fluid px-4">
-                <div class="page-header row no-gutters py-4">
-                    <div class="col-12 col-sm-6 text-left mb-0 pr-4 pb-3">
-                        <span class="text-uppercase page-subtitle">PUBLIC v1.6.2 DEXTools.io</span>
-                        <h3 class="page-title">DEXTboard</h3>
+                <div className="page-header row no-gutters py-4">
+                    <div className="col-12 col-sm-6 text-left mb-0 pr-4 pb-3">
+                        <span className="text-uppercase page-subtitle">PUBLIC v1.6.2 DEXTools.io</span>
+                        <h3 className="page-title">DEXTboard</h3>
                     </div>
-                    <div class="row col-12 col-sm-6">
-                        <div class="col-12 col-lg-6 text-left mb-0 py-1 px-1 card-burn text-sm-right">
-                            <span class="text-uppercase page-subtitle">Next DEXTShare</span>
-                            <h3 class="p-0 m-0">2021-02-01 
-                            <span class="text-nowrap"> 1,059,915 DEXT 
-                            <i class="fa fa-bar-chart ml-2"></i>
+                    <div className="row col-12 col-sm-6">
+                        <div className="col-12 col-lg-6 text-left mb-0 py-1 px-1 card-burn text-sm-right">
+                            <span className="text-uppercase page-subtitle">Next DEXTShare</span>
+                            <h3 className="p-0 m-0">2021-02-01 
+                            <span className="text-nowrap"> 1,059,915 DEXT 
+                            <i className="fa fa-bar-chart ml-2"></i>
                             </span>
                             </h3>
                         </div>
-                        <div class="col-12 col-lg-6 text-left mb-0 py-1 px-1 card-burn text-sm-right">
-                            <span class="text-uppercase page-subtitle">Next token burn</span>
-                            <h3 class="p-0 m-0">2021-02-01 
-                            <span class="text-nowrap"> 15,991 DEXT 
-                            <i class="fa fa-fire ml-2"></i>
+                        <div className="col-12 col-lg-6 text-left mb-0 py-1 px-1 card-burn text-sm-right">
+                            <span className="text-uppercase page-subtitle">Next token burn</span>
+                            <h3 className="p-0 m-0">2021-02-01 
+                            <span className="text-nowrap"> 15,991 DEXT 
+                            <i className="fa fa-fire ml-2"></i>
                             </span>
                             </h3>
                         </div>
@@ -45,52 +45,52 @@ class DextBoard extends Component {
                 <div className="row justify-content-md-center">
                     <div className="col-12 col-md-6 col-xl-5 py-5">
                         <div className="box-home card-uniswap pb-5">
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <img src={unicorn} class="mr-2" />
-                                <h4 class="m-0">TOOLS 
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <img src={unicorn} className="mr-2" />
+                                <h4 className="m-0">TOOLS 
                                     <span>UNISWAP V2</span>
                                 </h4>
                             </div>
-                            <div class="box-home-body px-3 py-2 m-0">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-12 my-3">
-                                            <div class="ng-autocomplete-class">
-                                                <div class="autocomplete-container">
-                                                    <div class="input-container">
-                                                        <input type="text" placeholder="Search pair by symbol / name / pair contract / token contract" class="ng-untouched ng-pristine ng-valid" />
+                            <div className="box-home-body px-3 py-2 m-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row">
+                                        <div className="col-12 my-3">
+                                            <div className="ng-autocomplete-class">
+                                                <div className="autocomplete-container">
+                                                    <div className="input-container">
+                                                        <input type="text" placeholder="Search pair by symbol / name / pair contract / token contract" />
                                                     </div>
                                                 </div>
-                                                <i class="fa fa-search fa-2x mr-2"></i>
+                                                <i className="fa fa-search fa-2x mr-2"></i>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <a class="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pool-explorer">
-                                                <i class="fa fa-chain fa-2x mr-2"></i>
+                                        <div className="col-6">
+                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pool-explorer">
+                                                <i className="fa fa-chain fa-2x mr-2"></i>
                                                 <span>Pool Explorer</span>
                                             </a>
                                         </div>
-                                        <div class="col-6">
-                                            <a class="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pair-explorer/0x37a0464f8f4c207b54821f3c799afd3d262aa944">
-                                                <i class="fa fa-wpexplorer fa-2x mr-2"></i>
+                                        <div className="col-6">
+                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pair-explorer/0x37a0464f8f4c207b54821f3c799afd3d262aa944">
+                                                <i className="fa fa-wpexplorer fa-2x mr-2"></i>
                                                 <span>Pair Explorer</span>
                                             </a>
                                         </div>
-                                        <div class="col-6">
-                                            <a class="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/big-swap-explorer">
-                                                <i class="fa fa-ship fa-2x mr-2"></i>
+                                        <div className="col-6">
+                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/big-swap-explorer">
+                                                <i className="fa fa-ship fa-2x mr-2"></i>
                                                 <span>Big Swap Explorer</span>
                                             </a>
                                         </div>
-                                        <div class="col-6">
-                                            <a class="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/multi-swap">
-                                                <i class="fa fa-columns fa-2x mr-2"></i>
+                                        <div className="col-6">
+                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/multi-swap">
+                                                <i className="fa fa-columns fa-2x mr-2"></i>
                                                 <span>MultiSwap</span>
                                             </a>
                                         </div>
-                                        <div class="col-6">
-                                            <a class="my-2 py-2 px-2 card-tool" href="/app/uniswap/wallet-info">
-                                                <i class="fa fa-address-card fa-2x mr-2"></i>
+                                        <div className="col-6">
+                                            <a className="my-2 py-2 px-2 card-tool" href="/app/uniswap/wallet-info">
+                                                <i className="fa fa-address-card fa-2x mr-2"></i>
                                                 <span>Wallet Info</span>
                                             </a>
                                         </div>
@@ -98,36 +98,36 @@ class DextBoard extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="box-home card-idex mt-5">
-                            <div class="stats-small__data ticker-price bg-success px-3 py-2">
-                                <span class="stats-small__label mb-1 text-uppercase text-white">Idex 2.0</span>
-                                <h6 class="stats-small__value count m-0 text-white">UPGRADING</h6>
+                        <div className="box-home card-idex mt-5">
+                            <div className="stats-small__data ticker-price bg-success px-3 py-2">
+                                <span className="stats-small__label mb-1 text-uppercase text-white">Idex 2.0</span>
+                                <h6 className="stats-small__value count m-0 text-white">UPGRADING</h6>
                             </div>
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <img src={idex} class="mr-2" />
-                                <h4 class="m-0">TOOLS 
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <img src={idex} className="mr-2" />
+                                <h4 className="m-0">TOOLS 
                                 <span>IDEX 2.0</span>
                                 </h4>
                             </div>
-                            <div class="box-home-body px-3 py-2 m-0">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <span class="my-2 py-2 px-2 card-tool">
-                                                <i class="fa fa-flash fa-2x mr-2"></i>
-                                                <span class="mt-1">Token Catch</span>
+                            <div className="box-home-body px-3 py-2 m-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <span className="my-2 py-2 px-2 card-tool">
+                                                <i className="fa fa-flash fa-2x mr-2"></i>
+                                                <span className="mt-1">Token Catch</span>
                                             </span>
                                         </div>
-                                        <div class="col-6">
-                                            <span class="my-2 py-2 px-2 card-tool">
-                                                <i class="fa fa-podcast fa-2x mr-2"></i>
-                                                <span class="mt-1">Spread Hunter</span>
+                                        <div className="col-6">
+                                            <span className="my-2 py-2 px-2 card-tool">
+                                                <i className="fa fa-podcast fa-2x mr-2"></i>
+                                                <span className="mt-1">Spread Hunter</span>
                                             </span>
                                         </div>
-                                        <div class="col-6">
-                                            <span class="my-2 py-2 px-2 card-tool">
-                                                <i class="fa fa-database fa-2x mr-2"></i>
-                                                <span class="mt-1">Exchange Data</span>
+                                        <div className="col-6">
+                                            <span className="my-2 py-2 px-2 card-tool">
+                                                <i className="fa fa-database fa-2x mr-2"></i>
+                                                <span className="mt-1">Exchange Data</span>
                                             </span>
                                         </div>
                                     </div>
@@ -135,142 +135,142 @@ class DextBoard extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-3 py-5">
-                        <div class="box-home">
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" class="button-help">?</a>
-                                <h4 class="m-0">HOT 
+                    <div className="col-12 col-md-6 col-xl-3 py-5">
+                        <div className="box-home">
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <a href="#" className="button-help">?</a>
+                                <h4 className="m-0">HOT 
                                 <span>PAIRS</span>
-                                <i class="fa fa-fire ml-2"></i>
+                                <i className="fa fa-fire ml-2"></i>
                                 </h4>
                             </div>
-                            <div class="box-home-body px-3 py-2 m-0 box-home-body-fit-height">
+                            <div className="box-home-body px-3 py-2 m-0 box-home-body-fit-height">
                                 <h6>
                                     <div> PROS </div>
-                                    <div class="wrapper">
-                                        <span class="name">
+                                    <div className="wrapper">
+                                        <span className="name">
                                             <span>Prosper</span>
-                                            <a class="ml-1" href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer"></i>
+                                            <a className="ml-1" href="javascript:void(0)">
+                                                <i className="fa fa-wpexplorer"></i>
                                             </a>
                                         </span>
-                                        <span class="price text-danger"> $0.385425 </span>
+                                        <span className="price text-danger"> $0.385425 </span>
                                     </div>
                                 </h6>
                                 <ul>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name"> COMBO </span>
-                                                <span class="price text-danger"> $1.941105 </span>
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name"> COMBO </span>
+                                                <span className="price text-danger"> $1.941105 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name"> pBTC35A </span>
-                                                <span class="price text-danger"> $140.4925 </span>
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name"> pBTC35A </span>
+                                                <span className="price text-danger"> $140.4925 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-up mr-1 text-success"></i> CUDOS 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-up mr-1 text-success"></i> CUDOS 
                                                 </span>
-                                                <span class="price text-danger"> $0.065419 </span>
+                                                <span className="price text-danger"> $0.065419 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-up mr-1 text-success"></i> DAIQ 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-up mr-1 text-success"></i> DAIQ 
                                                 </span>
-                                                <span class="price text-danger"> $0.238666 </span>
+                                                <span className="price text-danger"> $0.238666 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-up mr-1 text-success"></i> PRQ 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-up mr-1 text-success"></i> PRQ 
                                                 </span>
-                                                <span class="price text-danger"> $0.826016 </span>
+                                                <span className="price text-danger"> $0.826016 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-up mr-1 text-success"></i> WISE 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-up mr-1 text-success"></i> WISE 
                                                 </span>
-                                                <span class="price text-success"> $0.662279 </span>
+                                                <span className="price text-success"> $0.662279 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-down mr-1 text-danger"></i> SPI 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-down mr-1 text-danger"></i> SPI 
                                                 </span>
-                                                <span class="price text-danger"> $10.49786 </span>
+                                                <span className="price text-danger"> $10.49786 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="info">
-                                            <div class="wrapper">
-                                                <span class="name">
-                                                    <i class="fa fa-angle-double-down mr-1 text-danger"></i> SHARE 
+                                        <div className="info">
+                                            <div className="wrapper">
+                                                <span className="name">
+                                                    <i className="fa fa-angle-double-down mr-1 text-danger"></i> SHARE 
                                                 </span>
-                                                <span class="price text-success"> $0.601859 </span>
+                                                <span className="price text-success"> $0.601859 </span>
                                             </div>
                                         </div>
-                                        <div class="link">
+                                        <div className="link">
                                             <a href="javascript:void(0)">
-                                                <i class="fa fa-wpexplorer align-middle"></i>
+                                                <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
                                     </li>
@@ -278,68 +278,68 @@ class DextBoard extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 py-5">
-                        <div class="box-home">
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" class="button-help">?</a>
-                                <h4 class="m-0"> HOT 
+                    <div className="col-12 col-md-6 col-xl-4 py-5">
+                        <div className="box-home">
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <a href="#" className="button-help">?</a>
+                                <h4 className="m-0"> HOT 
                                 <span>NEWS</span>
-                                <i class="fa fa-newspaper-o ml-2"></i>
+                                <i className="fa fa-newspaper-o ml-2"></i>
                                 </h4>
                             </div>
-                            <div class="box-home-body px-3 py-2 m-0 box-home-body-fit-height">
+                            <div className="box-home-body px-3 py-2 m-0 box-home-body-fit-height">
                                 <div>
-                                    <div class="news py-3">
-                                        <div class="data">
-                                            <span class="info has-token">
-                                                <span class="badge badge-success mr-2">N</span>
-                                                <span class="token-info">
-                                                    <img src={tokenInfo} width="22" height="22" class="logo" />
-                                                    <span class="symbol">PRQ</span>
-                                                    <a href="#" class="fa fa-wpexplorer fa-2x token-action"></a>
+                                    <div className="news py-3">
+                                        <div className="data">
+                                            <span className="info has-token">
+                                                <span className="badge badge-success mr-2">N</span>
+                                                <span className="token-info">
+                                                    <img src={tokenInfo} width="22" height="22" className="logo" />
+                                                    <span className="symbol">PRQ</span>
+                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
-                                                <span class="created text-secondary">2021-01-14, 12:50</span>
+                                                <span className="created text-secondary">2021-01-14, 12:50</span>
                                             </span>
-                                            <h3 class="title mt-2 mb-1"> PARSIQ integrates with Aave Protocol </h3>
-                                            <p class="p-0 m-0 description"> Aave Custom Streams now available with PARSIQ Monitoring. 
-                                            <a target="_blank" class="news-link" href="javascript:void(0)" data-news-link="">
-                                                <i class="fa ml-2 fa-external-link"></i>
+                                            <h3 className="title mt-2 mb-1"> PARSIQ integrates with Aave Protocol </h3>
+                                            <p className="p-0 m-0 description"> Aave Custom Streams now available with PARSIQ Monitoring. 
+                                            <a target="_blank" className="news-link" href="javascript:void(0)" data-news-link="">
+                                                <i className="fa ml-2 fa-external-link"></i>
                                             </a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="news py-3">
-                                        <div class="data">
-                                            <span class="info has-token">
-                                                <span class="badge badge-success mr-2">N</span>
-                                                <span class="token-info">
-                                                    <img src={tokenInfo2} width="22" height="22" class="logo" />
-                                                    <span class="symbol">eXRD</span>
-                                                    <a href="#" class="fa fa-wpexplorer fa-2x token-action"></a>
+                                    <div className="news py-3">
+                                        <div className="data">
+                                            <span className="info has-token">
+                                                <span className="badge badge-success mr-2">N</span>
+                                                <span className="token-info">
+                                                    <img src={tokenInfo2} width="22" height="22" className="logo" />
+                                                    <span className="symbol">eXRD</span>
+                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
-                                                <span class="created text-secondary">2021-01-14, 12:29</span>
+                                                <span className="created text-secondary">2021-01-14, 12:29</span>
                                             </span>
-                                            <h3 class="title mt-2 mb-1">  Bitfinex to list E-Radix(eXRD)  </h3>
-                                            <p class="p-0 m-0 description">  We’re pleased to announce that Bitfinex will list E-Radix (eXRD). Deposits are now open. Trading and withdrawal of eXRD will commence on 21/01/21  
-                                            <a target="_blank" class="news-link" href="javascript:void(0)" data-news-link="">
-                                                <i class="fa ml-2 fa-external-link"></i>
+                                            <h3 className="title mt-2 mb-1">  Bitfinex to list E-Radix(eXRD)  </h3>
+                                            <p className="p-0 m-0 description">  We’re pleased to announce that Bitfinex will list E-Radix (eXRD). Deposits are now open. Trading and withdrawal of eXRD will commence on 21/01/21  
+                                            <a target="_blank" className="news-link" href="javascript:void(0)" data-news-link="">
+                                                <i className="fa ml-2 fa-external-link"></i>
                                             </a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="news py-3">
-                                        <div class="data">
-                                            <span class="info has-token">
-                                                <span class="token-info">
-                                                    <span class="symbol">RARE</span>
-                                                    <a href="#" class="fa fa-wpexplorer fa-2x token-action"></a>
+                                    <div className="news py-3">
+                                        <div className="data">
+                                            <span className="info has-token">
+                                                <span className="token-info">
+                                                    <span className="symbol">RARE</span>
+                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
-                                                <span class="created text-secondary">2021-01-14, 03:38</span>
+                                                <span className="created text-secondary">2021-01-14, 03:38</span>
                                             </span>
-                                            <h3 class="title mt-2 mb-1">  $RARE Uniswap Rewards Doubled!    </h3>
-                                            <p class="p-0 m-0 description">   Unique.One has now doubled $RARE rewards to 2200 $RARE daily (New APY ~ 300% +) in appreciation of $RARE holders providing liquidity in the $RARE/ETH Pool on Uniswap.   
-                                            <a target="_blank" class="news-link" href="javascript:void(0)" data-news-link="">
-                                                <i class="fa ml-2 fa-external-link"></i>
+                                            <h3 className="title mt-2 mb-1">  $RARE Uniswap Rewards Doubled!    </h3>
+                                            <p className="p-0 m-0 description">   Unique.One has now doubled $RARE rewards to 2200 $RARE daily (New APY ~ 300% +) in appreciation of $RARE holders providing liquidity in the $RARE/ETH Pool on Uniswap.   
+                                            <a target="_blank" className="news-link" href="javascript:void(0)" data-news-link="">
+                                                <i className="fa ml-2 fa-external-link"></i>
                                             </a>
                                             </p>
                                         </div>
@@ -349,55 +349,55 @@ class DextBoard extends Component {
                         </div>
                 </div>
                 </div>
-                <div class="page-header row no-gutters py-4">
-                    <div class="col-12 col-md-7 text-left mb-0 pr-4 pb-3">
-                        <h3 class="page-title">DEXTboard upcomings</h3>
+                <div className="page-header row no-gutters py-4">
+                    <div className="col-12 col-md-7 text-left mb-0 pr-4 pb-3">
+                        <h3 className="page-title">DEXTboard upcomings</h3>
                     </div>
                 </div>
-                <div class="row justify-content-md-center">
-                    <div class="col-12 col-lg-4 py-5">
-                        <div class="box-home card-sushi">
-                            <div class="stats-small__data ticker-price bg-success px-3 py-2">
+                <div className="row justify-content-md-center">
+                    <div className="col-12 col-lg-4 py-5">
+                        <div className="box-home card-sushi">
+                            <div className="stats-small__data ticker-price bg-success px-3 py-2">
                                 <a target="_blank" href="javascript:void(0)">
-                                    <span class="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
-                                    <h6 class="stats-small__value count m-0 text-white">SOON</h6>
+                                    <span className="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
+                                    <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <img src={sushi} class="mr-2" />
-                                <h4 class="m-0">TOOLS
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <img src={sushi} className="mr-2" />
+                                <h4 className="m-0">TOOLS
                                     <span>SUSHI</span>
                                 </h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 py-5">
-                        <div class="box-home card-mooniswap">
-                            <div class="stats-small__data ticker-price bg-success px-3 py-2">
+                    <div className="col-12 col-lg-4 py-5">
+                        <div className="box-home card-mooniswap">
+                            <div className="stats-small__data ticker-price bg-success px-3 py-2">
                                 <a target="_blank" href="javascript:void(0)">
-                                    <span class="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
-                                    <h6 class="stats-small__value count m-0 text-white">SOON</h6>
+                                    <span className="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
+                                    <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <img src={mooniswap} class="mr-2" />
-                                <h4 class="m-0">TOOLS
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <img src={mooniswap} className="mr-2" />
+                                <h4 className="m-0">TOOLS
                                     <span>MOONISWAP</span>
                                 </h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 py-5">
-                        <div class="box-home card-kucoin">
-                            <div class="stats-small__data ticker-price bg-success px-3 py-2">
+                    <div className="col-12 col-lg-4 py-5">
+                        <div className="box-home card-kucoin">
+                            <div className="stats-small__data ticker-price bg-success px-3 py-2">
                                 <a target="_blank" href="javascript:void(0)">
-                                    <span class="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
-                                    <h6 class="stats-small__value count m-0 text-white">SOON</h6>
+                                    <span className="stats-small__label mb-1 text-uppercase text-white">GET ACCESS</span>
+                                    <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div class="box-home-header px-3 py-3 m-0 text-right">
-                                <img src={kukoin} class="mr-2" />
-                                <h4 class="m-0">TOOLS
+                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                                <img src={kukoin} className="mr-2" />
+                                <h4 className="m-0">TOOLS
                                     <span>KUCOIN</span>
                                 </h4>
                             </div>
