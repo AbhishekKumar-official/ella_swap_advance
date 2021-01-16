@@ -14,6 +14,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import sushi from "../images/sushi_logo.jpg"
 import mooniswap from "../images/mooniswap_logo.svg"
 import kukoin from "../images/kukoin_logo.png"
+import $ from "jquery";
 import "./DextBoard.scss"
 class DextBoard extends Component {
     constructor(props) {
@@ -37,6 +38,18 @@ class DextBoard extends Component {
         })
     }
     
+    componentDidMount() {
+        $("#marquee").mouseenter(function(){
+            document.getElementById("marquee").stop();
+          });
+          $("#marquee").mouseleave(function(){
+            document.getElementById("marquee").start();
+          });
+
+          
+        
+        $('[data-toggle="tooltip"]').tooltip();
+    }
     render() {
         const {hotpair,news} = this.state;
         return (
@@ -195,7 +208,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -208,7 +221,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -223,7 +236,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -238,7 +251,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -253,7 +266,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -268,7 +281,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -283,7 +296,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>
@@ -298,7 +311,7 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="link">
-                                            <a href="javascript:void(0)">
+                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Show live data">
                                                 <i className="fa fa-wpexplorer align-middle"></i>
                                             </a>
                                         </div>

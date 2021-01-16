@@ -16,3 +16,29 @@ body, html{
 .table-responsive{
     height: 520px;
 }
+.tooltip.show {
+    opacity: 1;
+}
+.tooltip{ 
+    position: relative; 
+    opacity: 1;
+}
+.tooltip-inner{
+      border-width: 1px;
+      border-style: solid;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
+      border-radius: .4rem;
+      font-size: .9rem;
+      text-align: center;
+      width: auto;
+      padding: 0.6rem 1rem;
+      line-height: 150%;
+      font-weight: 400;
+      opacity: 1;
+}
+a {
+    color: #00b8d8;
+}
+a:hover {
+    color: #0056b3;
+}
