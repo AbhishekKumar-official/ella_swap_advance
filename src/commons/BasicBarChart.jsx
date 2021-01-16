@@ -11,8 +11,8 @@ class BasicBarChart extends Component {
     
         this.state = {
         
-          series: [{
-            data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+            scores: [{
+            data: [400, 400, 400, 400,400]
           }],
           options: {
             chart: {
@@ -28,9 +28,7 @@ class BasicBarChart extends Component {
               enabled: false
             },
             xaxis: {
-              categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-                'United States', 'China', 'Germany'
-              ],
+              categories: ['Information', 'Transactions','Holders', 'Creation']
             }
           },
         
@@ -43,7 +41,7 @@ class BasicBarChart extends Component {
            
             
                 <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="bar" height={350} />
+                <Chart options={this.state.options} series={this.state.scores} type="bar" height={350} />
                 </div>
            
         )
