@@ -3,13 +3,42 @@ import banner from "../images/banner.png"
 import unicorn from "../images/uniswap-logo-home.png"
 import idex from "../images/idex-logo-home.png"
 import tokenInfo from "../images/token-info.png"
+import logocompressed from "../images/logo-compressed.png"
 import tokenInfo2 from "../images/token-info-2.png"
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 import sushi from "../images/sushi_logo.jpg"
 import mooniswap from "../images/mooniswap_logo.svg"
 import kukoin from "../images/kukoin_logo.png"
 import "./DextBoard.scss"
 class DextBoard extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             hotpair:false,
+             news:false,
+        }
+    }
+
+    handleCloseHotPair = () => {
+        this.setState({
+            hotpair: false
+        })
+    }
+
+    handleCloseNews = () => {
+        this.setState({
+            news: false
+        })
+    }
+    
     render() {
+        const {hotpair,news} = this.state;
         return (
             <div className="main-dextboard">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
@@ -138,7 +167,7 @@ class DextBoard extends Component {
                     <div className="col-12 col-md-6 col-xl-3 py-5">
                         <div className="box-home">
                             <div className="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" className="button-help">?</a>
+                                <a href="#" onClick={()=>{this.setState({hotpair:true})}} className="button-help">?</a>
                                 <h4 className="m-0">HOT 
                                 <span>PAIRS</span>
                                 <i className="fa fa-fire ml-2"></i>
@@ -281,7 +310,7 @@ class DextBoard extends Component {
                     <div className="col-12 col-md-6 col-xl-4 py-5">
                         <div className="box-home">
                             <div className="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" className="button-help">?</a>
+                                <a href="#" className="button-help" onClick={()=>this.setState({news:true})}>?</a>
                                 <h4 className="m-0"> HOT 
                                 <span>NEWS</span>
                                 <i className="fa fa-newspaper-o ml-2"></i>
@@ -405,7 +434,47 @@ class DextBoard extends Component {
                     </div>
                 </div>
             </div>
-            </div>
+            <Dialog
+            open={hotpair}
+            onClose={this.handleCloseHotPair}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description">
+              These pairs are the most viewed by DEXT users in real time, they are shown with a 1 minute delay for free users. These pairs are decided by the community visits and do not represent any investment advice or endorsement from the DEXTools team.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseHotPair} color="primary">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+            <Dialog
+            open={news}
+            onClose={this.handleCloseNews}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description">
+              These are the most upvoted news by the DEXT community during the last days.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseNews} color="primary">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </div>
         )
     }
 }
