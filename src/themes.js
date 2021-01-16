@@ -109,6 +109,7 @@ export const darkTheme = {
     cardHeaderBtnWhiteColor: "#00b8d8",
     cardHeaderBtnWhiteBg: "rgba(0,184,216,.22)",
     cardHeaderBtnWhiteBorder: "#00b8d8",
+    cardHeaderH6Color: "#ffffff",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -286,6 +287,9 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.cardHeaderBtnWhiteColor};
             background-color: ${props => props.theme.cardHeaderBtnWhiteBg};
             border-color: ${props => props.theme.cardHeaderBtnWhiteBorder};
+        }
+        .card-header h6{
+            color: ${props => props.theme.cardHeaderH6Color};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};

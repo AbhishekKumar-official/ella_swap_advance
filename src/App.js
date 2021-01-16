@@ -8,6 +8,7 @@ import PairExplorer from "./pages/PairExplorer"
 import UserAccount from "./pages/UserAccount"
 import DextBoard from "./pages/DextBoard"
 import PoolExplorer from "./pages/PoolExplorer"
+import BigSwapExplorer from "./pages/BigSwapExplorer"
 import "./App.css"
 
 const StyledDiv = styled.div`
@@ -29,6 +30,7 @@ const App = () => {
           <Switch>
             <Route exact path="/dextboard" component={DextBoard}/>
             <Route exact path="/pool-explorer" component={PoolExplorer}/>
+            <Route exact path="/big-swap-explorer" component={BigSwapExplorer}/>
             <Route exact path="/user-account" component={UserAccount}/>
             <Route exact path="/pair-explorer" component={PairExplorer}/>
             <Route exact path="/configuration" component={Configuration}/>
