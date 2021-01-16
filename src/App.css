@@ -2,7 +2,7 @@ body, html{
     font-weight: 400;
     font-size: 13px;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     overflow-x: hidden;
 }
 ::-webkit-scrollbar{
@@ -41,4 +41,39 @@ a {
 }
 a:hover {
     color: #0056b3;
+}
+.MuiDialog-paper{ 
+    max-width: 500px !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1) !important;
+    padding: 1.875rem 0 0;
+}
+.MuiDialogTitle-root{
+    padding: 0 2.1875rem !important;
+    text-align: center;
+    margin-bottom: 1rem !important;
+}
+.MuiDialogContent-root{
+    padding: 0 2.1875rem !important;
+    padding-bottom: 1.875rem !important;
+}
+.MuiDialogActions-root{
+    padding: .9375rem 2.1875rem !important;
+    border-width: 1px;
+    border-style: solid;
+}
+.MuiDialog-paper .btn-info {
+    color: #fff;
+    border-color: #00b8d8;
+    background-color: #00b8d8;
+    box-shadow: none;
+}
+.MuiDialog-paper .btn-info:hover{
+    color: #fff;
+    background-color: #00a2bf !important;
+    border-color: #00a2bf;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05), 0 4px 10px rgba(0,184,216,.25);
+}
+.MuiDialog-paper .btn-info:focus{
+    box-shadow: 0 0 3px rgba(0,184,216,.15), 0 3px 15px rgba(0,184,216,.2), 0 2px 5px rgba(0,0,0,.1)
 }

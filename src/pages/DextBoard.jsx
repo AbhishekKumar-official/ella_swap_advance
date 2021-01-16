@@ -457,12 +457,12 @@ class DextBoard extends Component {
                 <img src={logocompressed} alt=""/>
             </DialogTitle>
             <DialogContent>
-              <DialogContentText id="alert-dialog-description">
+              <DialogContentText id="alert-dialog-description" className="mb-0">
               These pairs are the most viewed by DEXT users in real time, they are shown with a 1 minute delay for free users. These pairs are decided by the community visits and do not represent any investment advice or endorsement from the DEXTools team.
               </DialogContentText>
             </DialogContent>
             <DialogActions>
-              <Button onClick={this.handleCloseHotPair} color="primary">
+              <Button onClick={this.handleCloseHotPair} className="btn btn-info">
                 Close
               </Button>
             </DialogActions>
@@ -482,7 +482,7 @@ class DextBoard extends Component {
               </DialogContentText>
             </DialogContent>
             <DialogActions>
-              <Button onClick={this.handleCloseNews} color="primary">
+              <Button onClick={this.handleCloseNews} className="btn btn-info">
                 Close
               </Button>
             </DialogActions>
