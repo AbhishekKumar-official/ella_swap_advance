@@ -713,6 +713,21 @@
                         right: 20px;
                         padding-bottom: 0;
                     }
+                    .apexcharts-series{
+                        path{
+                            fill: rgba(23, 198, 113, 0.85);
+                            height: 4.9px;
+                        }
+                    }
+                    .apexcharts-text tspan{
+                        display: none;
+                    }
+                    line{
+                        stroke: transparent;
+                    }
+                    .apexcharts-toolbar{
+                        display: none;
+                    }
                 }
             }
             .vote-score{
