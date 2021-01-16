@@ -25,6 +25,10 @@ class PoolExplorer extends Component {
           $("#marquee").mouseleave(function(){
             document.getElementById("marquee").start();
           });
+
+          
+        
+        $('[data-toggle="tooltip"]').tooltip();
     }
     
 
@@ -168,7 +172,7 @@ class PoolExplorer extends Component {
                                             </td>
                                             <td>1 m 43 s</td>
                                             <td>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                            <a href="javascript:void(0)" ref = "dataTip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
                                                 <i className="fa fa-filter pools-icon-warning"></i>
                                             </a>
                                             <a href="javascript:void(0)">
