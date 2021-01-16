@@ -46,3 +46,9 @@ body, html{
 .bs-tooltip-top .arrow::before{
     border-top-color: #868E96 !important;
 }
+a {
+    color: #00b8d8;
+}
+a:hover {
+    color: #0056b3;
+}
