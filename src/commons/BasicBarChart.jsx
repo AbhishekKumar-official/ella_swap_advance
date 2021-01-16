@@ -12,7 +12,7 @@ class BasicBarChart extends Component {
         this.state = {
         
             scores: [{
-            data: [400, 400, 400, 400,400]
+            data: [99, 99, 400, 400,400]
           }],
           options: {
             chart: {
