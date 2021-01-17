@@ -3,11 +3,22 @@ import { NavLink } from 'react-router-dom'
 
 import logocompressed from "../../images/logo-compressed.png"
 import logo from "../../images/logo.png"
+import logolight from "../../images/logo-light.png"
 import "./Drawer.scss"
 
 class Drawer extends Component {
+
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       islight: false
+    }
+  }
+  
   render() {
-    
+    const {islight} = this.state;
     return (
       <aside className="col-12 col-md-3 col-lg-2 px-0 drawer">
         <div className="drawer-header">
@@ -15,7 +26,8 @@ class Drawer extends Component {
             <img src={logocompressed} />
           </a>
           <a href="javascript:void(0)" className="logo">
-            <img src={logo} />
+          {islight === true ?(<img src={logolight} />) :( <img src={logo} /> )}
+           
           </a>
         </div>
         <div className="drawer-body">
@@ -85,7 +97,7 @@ class Drawer extends Component {
                   <div class="theme-separator">/</div>
                   <i className="theme-icon theme-icon-right theme-active fa fa-moon-o"></i>
                 </div>
-                <span>Theme Mode</span>
+                <span onClick={()=>this.setState({islight:true})}>Theme Mode</span>
               </a>
             </li>
           </ul>
