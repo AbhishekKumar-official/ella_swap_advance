@@ -13,7 +13,8 @@ class Drawer extends Component {
     super(props)
   
     this.state = {
-       islight: false
+       islight: false,
+       dummy:null
     }
   }
   
