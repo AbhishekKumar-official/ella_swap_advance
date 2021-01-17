@@ -1,12 +1,32 @@
 import React, { Component } from 'react'
 import banner from "../images/banner.png"
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import logocompressed from "../images/logo-compressed.png";
 import "./MultiSwap.scss"
 class MultiSwap extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            hotpair:false,
+        }
+    }
+    handleCloseHotPair = () => {
+        this.setState({
+            hotpair: false
+        })
+    }
     stop = () => {
         document.getElementById('marquee').stop();
     }
 
     render() {
+        const {hotpair} = this.state;
         return (
             <div className="main-multiswap">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
@@ -21,7 +41,7 @@ class MultiSwap extends Component {
                         </h4>
                         <h4 className="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
                         <i className="fa fa-fire ml-2"></i>
-                        <a href="#" className="hots-info fa fa-question-circle ml-2"></a>
+                        <a href="#" className="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
                         </h4>
                         <ul className="p-0 m-0 no-sponsor">
                             <div className="marquee-wrap">
@@ -110,13 +130,27 @@ class MultiSwap extends Component {
                         </div>
                     </div>
                     </div>
-                    
-                    
-                    
-               
-         
-         
-                    </div>
+                    <Dialog
+            open={hotpair}
+            onClose={this.handleCloseHotPair}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              These pairs are the most viewed by DEXT users in real time, they are shown with a 1 minute delay for free users. These pairs are decided by the community visits and do not represent any investment advice or endorsement from the DEXTools team.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseHotPair} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+                   </div>
         )
     }
 }
