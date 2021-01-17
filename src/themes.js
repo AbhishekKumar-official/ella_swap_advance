@@ -167,7 +167,6 @@ export const darkTheme = {
     buttonHelpBorder: "hsla(0,0%,100%,.7) !important",
     boxHomeBodyFitHeightH6Color: "#ffffff",
     boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
-    mainDextboardContainerBg: "<img src={backgroundDark} />",
     boxHomeHeadeBoxImgShadow: "0 0 .5rem rgba(0,0,0,.68)",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
@@ -350,9 +349,6 @@ export const GlobalStyle = createGlobalStyle`
         .box-home-body-fit-height h6{
             border-color: ${props => props.theme.boxHomeBodyFitHeightH6Border};
             color: ${props => props.theme.boxHomeBodyFitHeightH6Color};
-        }
-        .main-dextboard-container{
-            background: ${props => props.theme.mainDextboardContainerBg} no-repeat;
         }
         .card-uniswap h4{
             color: ${props => props.theme.cardUniswapColor};
