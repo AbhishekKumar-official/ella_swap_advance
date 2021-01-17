@@ -28,7 +28,7 @@ const App = () => {
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
         <StyledDiv>
-          <Drawer themeToggler={handleThemeToggle}/>
+          <Drawer themeToggler={handleThemeToggle} theme={theme}/>
           <Switch>
             <Route exact path="/" component={DextBoard}/>
             <Route exact path="/dextboard" component={DextBoard}/>
