@@ -27,7 +27,7 @@ class Drawer extends Component {
             <img src={logocompressed} />
           </a>
           <a href="javascript:void(0)" className="logo">
-          {islight === true ?(<img src={logolight} />) :( <img src={logo} /> )}
+          {islight? (<img src={logolight} />) :( <img src={logo} /> )}
            
           </a>
         </div>
