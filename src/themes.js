@@ -60,6 +60,12 @@ export const lightTheme = {
     buttonHelpBorder: "#3d5170 !important",
     boxHomeBodyFitHeightH6Color: "#3d5170",
     boxHomeBodyFitHeightH6Border: "#212529 !important",
+    cardUniswapColor: "#cc0162",
+    cardIdexColor: "#058dc3",
+    cardSushiColor: "#bd9175",
+    cardMooniswapColor: "#5f7c9e",
+    cardKucoinColor: "#23ae8e",
+    boxHomeHeadeBoxImgShadow: "0 0 0.5rem rgba(0,0,0,.31)",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
     listGroupItemBorder: "#15192a",
@@ -158,6 +164,7 @@ export const darkTheme = {
     boxHomeBodyFitHeightH6Color: "#ffffff",
     boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
     mainDextboardContainerBg: "<img src={backgroundDark} />",
+    boxHomeHeadeBoxImgShadow: "0 0 .5rem rgba(0,0,0,.68)",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
     listGroupItemBorder: "#15192a",
@@ -327,6 +334,21 @@ export const GlobalStyle = createGlobalStyle`
         }
         .main-dextboard-container{
             background: ${props => props.theme.mainDextboardContainerBg} no-repeat;
+        }
+        .card-uniswap h4{
+            color: ${props => props.theme.cardUniswapColor};
+        }
+        .card-idex h4{
+            color: ${props => props.theme.cardIdexColor};
+        }
+        .card-sushi h4{
+            color: ${props => props.theme.cardSushiColor};
+        }
+        .card-mooniswap h4{
+            color: ${props => props.theme.cardMooniswapColor};
+        }
+        .card-kucoin h4{
+            color: ${props => props.theme.cardKucoinColor};
         }
         .header-hot-pairs{
             background-color: ${props => props.theme.boxHomeHeaderBg};
