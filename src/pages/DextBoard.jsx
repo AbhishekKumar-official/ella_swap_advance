@@ -6,6 +6,7 @@ import tokenInfo from "../images/token-info.png"
 import logocompressed from "../images/logo-compressed.png"
 import tokenInfo2 from "../images/token-info-2.png"
 import Button from '@material-ui/core/Button';
+import { NavLink } from 'react-router-dom'
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -107,28 +108,28 @@ class DextBoard extends Component {
                                             </div>
                                         </div>
                                         <div className="col-6">
-                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pool-explorer">
+                                            <NavLink className="my-2 py-2 px-2 card-tool-enabled" to="/pool-explorer">
                                                 <i className="fa fa-chain fa-2x mr-2"></i>
                                                 <span>Pool Explorer</span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="col-6">
-                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/pair-explorer/0x37a0464f8f4c207b54821f3c799afd3d262aa944">
+                                            <NavLink className="my-2 py-2 px-2 card-tool-enabled" to="/pair-explorer">
                                                 <i className="fa fa-wpexplorer fa-2x mr-2"></i>
                                                 <span>Pair Explorer</span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="col-6">
-                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/big-swap-explorer">
+                                            <NavLink className="my-2 py-2 px-2 card-tool-enabled" to="/big-swap-explorer">
                                                 <i className="fa fa-ship fa-2x mr-2"></i>
                                                 <span>Big Swap Explorer</span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="col-6">
-                                            <a className="my-2 py-2 px-2 card-tool-enabled" href="/app/uniswap/multi-swap">
+                                            <NavLink className="my-2 py-2 px-2 card-tool-enabled" to="/multiswap">
                                                 <i className="fa fa-columns fa-2x mr-2"></i>
                                                 <span>MultiSwap</span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="col-6">
                                             <a className="my-2 py-2 px-2 card-tool" href="/app/uniswap/wallet-info">
