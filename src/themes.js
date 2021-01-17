@@ -123,6 +123,10 @@ export const darkTheme = {
     MuiDialogPaperBg: "#262c43",
     MuiDialogPaperColor: "#cacedb",
     MuiDialogActionsBorder: "#15192a",
+    moreinfoContentColor: "#cacedb",
+    walletsearchContainerInputColor: "#cacedb",
+    walletsearchContainerInputBg: "hsla(0,0%,100%,.12)",
+    walletsearchContainerInputBorder: "#868e96",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -340,8 +344,22 @@ export const GlobalStyle = createGlobalStyle`
         .MuiTypography-colorTextSecondary{
             color: ${props => props.theme.MuiDialogPaperColor} !important;
         }
-        .MuiDialogActions-root{{
+        .MuiDialogActions-root{
             border-top-color: ${props => props.theme.MuiDialogActionsBorder};
+        }
+        .MuiDialogTitle-root.share-header{
+            border-bottom-color: ${props => props.theme.MuiDialogActionsBorder};
+        }
+        .MuiDialogContent-root.moreinfo-content ul li{
+            color: ${props => props.theme.moreinfoContentColor};
+        }
+        .wallet-search-container input{
+            color: ${props => props.theme.walletsearchContainerInputColor};
+            background-color: ${props => props.theme.walletsearchContainerInputBg};
+            border-color: ${props => props.theme.walletsearchContainerInputBorder};
+        }
+        .MuiDialogContent-root.share-content .text-secondary{
+            color: ${props => props.theme.moreinfoContentColor} !important;
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};

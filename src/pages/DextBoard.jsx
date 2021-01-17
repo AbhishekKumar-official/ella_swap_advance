@@ -180,7 +180,7 @@ class DextBoard extends Component {
                     <div className="col-12 col-md-6 col-xl-3 py-5">
                         <div className="box-home">
                             <div className="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" onClick={()=>{this.setState({hotpair:true})}} className="button-help">?</a>
+                                <a href="javascript:void(0)" onClick={()=>{this.setState({hotpair:true})}} className="button-help">?</a>
                                 <h4 className="m-0">HOT 
                                 <span>PAIRS</span>
                                 <i className="fa fa-fire ml-2"></i>
@@ -323,7 +323,7 @@ class DextBoard extends Component {
                     <div className="col-12 col-md-6 col-xl-4 py-5">
                         <div className="box-home">
                             <div className="box-home-header px-3 py-3 m-0 text-right">
-                                <a href="#" className="button-help" onClick={()=>this.setState({news:true})}>?</a>
+                                <a href="javascript:void(0)" className="button-help" onClick={()=>this.setState({news:true})}>?</a>
                                 <h4 className="m-0"> HOT 
                                 <span>NEWS</span>
                                 <i className="fa fa-newspaper-o ml-2"></i>
@@ -338,7 +338,7 @@ class DextBoard extends Component {
                                                 <span className="token-info">
                                                     <img src={tokenInfo} width="22" height="22" className="logo" />
                                                     <span className="symbol">PRQ</span>
-                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
+                                                    <a href="javascript:void(0)" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
                                                 <span className="created text-secondary">2021-01-14, 12:50</span>
                                             </span>
@@ -357,7 +357,7 @@ class DextBoard extends Component {
                                                 <span className="token-info">
                                                     <img src={tokenInfo2} width="22" height="22" className="logo" />
                                                     <span className="symbol">eXRD</span>
-                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
+                                                    <a href="javascript:void(0)" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
                                                 <span className="created text-secondary">2021-01-14, 12:29</span>
                                             </span>
@@ -374,7 +374,7 @@ class DextBoard extends Component {
                                             <span className="info has-token">
                                                 <span className="token-info">
                                                     <span className="symbol">RARE</span>
-                                                    <a href="#" className="fa fa-wpexplorer fa-2x token-action"></a>
+                                                    <a href="javascript:void(0)" className="fa fa-wpexplorer fa-2x token-action"></a>
                                                 </span>
                                                 <span className="created text-secondary">2021-01-14, 03:38</span>
                                             </span>

@@ -14,7 +14,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import logocompressed from "../images/logo-compressed.png"
+import logocompressed from "../images/logo-compressed.png";
+import sync from "../images/sync.png"
 import $ from "jquery";
 import "./PairExplorer.scss"
 class PairExplorer extends Component {
@@ -25,7 +26,11 @@ class PairExplorer extends Component {
             setNone:false,
             hotpair:false,
             buttonhelp:false,
-            share:false
+            share:false,
+            moreinfo:false,
+            communitytrust:false,
+            tokennews:false,
+            savedwallets:false
         }
     }
 
@@ -42,6 +47,26 @@ class PairExplorer extends Component {
     handleCloseShare = () => {
         this.setState({
             share: false
+        })
+    }
+    handleCloseMoreInfo = () => {
+        this.setState({
+            moreinfo: false
+        })
+    }
+    handleCloseCommunityTrust = () => {
+        this.setState({
+            communitytrust: false
+        })
+    }
+    handleCloseTokenNews = () => {
+        this.setState({
+            tokennews: false
+        })
+    }
+    handleCloseSavedWallets = () => {
+        this.setState({
+            savedwallets: false
         })
     }
 
@@ -64,7 +89,7 @@ class PairExplorer extends Component {
     
     
     render() {
-        const {setNone,hotpair,buttonhelp,share} = this.state;
+        const {setNone,hotpair,buttonhelp,share,moreinfo,communitytrust,tokennews,savedwallets} = this.state;
         return (
             <div className="main-pairexplorer">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
@@ -79,7 +104,7 @@ class PairExplorer extends Component {
                         </h4>
                         <h4 class="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
                         <i class="fa fa-fire ml-2"></i>
-                        <a href="#" class="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
+                        <a href="javascript:void(0)" class="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
                         </h4>
                         <ul class="p-0 m-0 no-sponsor">
                             <div className="marquee-wrap">
@@ -212,9 +237,9 @@ class PairExplorer extends Component {
                         <div class={`col-12 col-md-4 col-xl-2 ${setNone === true ? "d-xl-none": null }`}>
                             <div class="card card-small">
                                 <div class="card-header border-bottom position-relative favorites-header">
-                                    <a href="#" class="button-help" onClick={()=>{this.setState({buttonhelp:true})}}>?</a>
+                                    <a href="javascript:void(0)" class="button-help" onClick={()=>{this.setState({buttonhelp:true})}}>?</a>
                                     <h6 class="m-0 mr-4">Favorites 
-                                    <a href="#" class="d-xl-none">
+                                    <a href="javascript:void(0)" class="d-xl-none">
                                         <i class="fa mx-3 float-right fa-eye-slash"></i>
                                     </a>
                                 </h6>
@@ -292,7 +317,7 @@ class PairExplorer extends Component {
                                     <span class="data-volume-right pl-1">4277</span>
                                 </li>
                                 <li class="my-1 data-volume text-info data-volume-link">
-                                    <span class="data-volume-right">
+                                    <span class="data-volume-right cursor-pointer" onClick={()=>{this.setState({moreinfo:true})}}>
                                         <i class="fa fa-info-circle icon-arrow-price text-info mr-2"></i>View more info 
                                     </span>
                                 </li>
@@ -307,7 +332,7 @@ class PairExplorer extends Component {
                                 </div>
                                 <div class="vote-score p-4">
                                     <div class="vote-score-title text-center">
-                                        <a href="#" class="fa fa-info-circle icon-arrow-price text-info mr-1 action"></a> Community trust  (330 votes) 
+                                        <a href="javascript:void(0)" class="fa fa-info-circle icon-arrow-price text-info mr-1 action" onClick={()=>{this.setState({communitytrust:true})}}></a> Community trust  (330 votes) 
                                     </div>
                                     <div class="progress-hand text-center">
                                         <i placement="top" class="fa fa-thumbs-o-up"></i>
@@ -335,7 +360,7 @@ class PairExplorer extends Component {
                         <div className={`col-12 mb-4 order-xl-1 col-xl-2 ${setNone ? "d-xl-none": null}`}>
                             <div class="box-home">
                                 <div class="box-home-header px-3 py-3 m-0 text-right">
-                                    <a href="javascript:" class="button-help">?</a>
+                                    <a href="javascript:void(0)" class="button-help" onClick={()=>{this.setState({tokennews:true})}}>?</a>
                                     <h4 class="m-0">TOKEN 
                                     <span>NEWS</span>
                                     </h4>
@@ -413,12 +438,12 @@ class PairExplorer extends Component {
                             <div class="card-header border-bottom d-flex justify-content-between align-items-center card-with-tabs text-center text-sm-left">
                                 <div>
                                     <div role="group" aria-label="Page actions" class="tabs btn-group btn-group-toggle d-inline-flex mb-0 p-0 mb-2 mb-sm-0">
-                                        <a href="#" class="btn btn-white active">Trade History</a>
+                                        <a href="javascript:void(0)" class="btn btn-white active">Trade History</a>
                                         <span data-toggle="tooltip" data-placement="top" title="Only subscribed users can add positions" class="btn btn-white disabled"> My positions </span>
                                         <span data-toggle="tooltip" data-placement="top" title="Add pair to favourites first" class="btn btn-white"> Price Alerts </span>
                                     </div>
                                     <h6 class="m-0 d-inline-block align-middle mx-3"> DEXT (last 309 trades) 
-                                    <a class="d-inline-block wallet-filter-modal" data-toggle="tooltip" data-placement="left" title="Show saved wallets to filter">
+                                    <a class="d-inline-block wallet-filter-modal cursor-pointer" data-toggle="tooltip" data-placement="left" title="Show saved wallets to filter" onClick={()=>{this.setState({savedwallets:true})}}>
                                         <i class="fa fa-filter ml-2 row-icon"></i>
                                     </a>
                                     </h6>
@@ -802,19 +827,157 @@ Free members maximum 4 saved pairs.
             <DialogTitle id="alert-dialog-title" className="share-header">
             Share on Social Media
             </DialogTitle>
-            <DialogContent>
-              <DialogContentText id="alert-dialog-description" className="mb-0">
-              Premium & Standard members unlimited number of saved pairs.
-Free members maximum 4 saved pairs.
-              </DialogContentText>
+            <DialogContent className="share-content">
+            <div class="share-btn">
+                <a class="btn-twitter btn-outline-info p-2 m-2">
+                    <i class="fa fa-2x fa-twitter pr-2"></i>Twitter
+                </a>
+                <a class="btn-telegram btn-outline-info p-2 m-2">
+                    <i class="fa fa-2x fa-telegram pr-2"></i>Telegram 
+                </a>
+                <a class="btn-reddit btn-outline-salmon p-2 m-2">
+                    <i class="fa fa-2x fa-reddit pr-2"></i>Reddit 
+                </a>
+            </div>
             </DialogContent>
-            <DialogActions>
+            <DialogActions className="justify-content-center">
               <Button onClick={this.handleCloseShare} className="btn btn-info">
                 Close
               </Button>
             </DialogActions>
           </Dialog>
+          <Dialog
+            open={moreinfo}
+            onClose={this.handleCloseMoreInfo}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title"></DialogTitle>
+            <DialogContent className="moreinfo-content">
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              <ul class="m-0 text-left pl-0 pb-2 h6">
+                  <li class="d-flex">
+                      <span>Market Cap: </span>
+                      <span class="ml-auto">$10,102,797.69</span>
+                    </li>
+                    <li class="d-flex">
+                        <span>Circ. Supply: </span>
+                        <span class="ml-auto">94,130,955.679 DEXT</span>
+                    </li>
+                </ul>
+                <ul class="m-0 text-left pl-0">
+                    <li class="d-flex">
+                        <span>1 ETH: </span>
+                        <span class="ml-auto">11341.52 DEXT</span>
+                    </li>
+                    <li class="d-flex">
+                        <span>Pool created: </span>
+                        <span class="ml-auto">6/19/2020 06:24</span>
+                    </li>
+                    <li class="d-flex">
+                        <span>Fully diluted Market Cap: </span>
+                        <span class="ml-auto">$15,935,754.09</span>
+                    </li>
+                    <li class="d-flex">
+                        <span>Total Supply: </span>
+                        <span class="ml-auto">149,804,070 DEXT</span>
+                    </li>
+                    <li class="d-flex">
+                        <span>Pooled DEXT: </span>
+                        <span class="ml-auto">4.22%</span>
+                    </li>
+                </ul>
+                <div class="MuiDialogActions-root d-flex justify-content-between">
+                    <ul class="m-0 text-left pl-0 h6">
+                        <a tabindex="-1" href="javascript:void(0)">
+                            <img src={sync} height="16px" />
+                            Liquidity Bonded 
+                        </a>
+                    </ul>
+                    <span>$17,442.00</span>
+                </div>
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseMoreInfo} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          <Dialog
+            open={communitytrust}
+            onClose={this.handleCloseCommunityTrust}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              This bar represents the trust of DEXT community in this pair. You have 1 vote per pair but you can change it.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseCommunityTrust} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          <Dialog
+            open={tokennews}
+            onClose={this.handleCloseTokenNews}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+                <img src={logocompressed} alt=""/>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+              If you want your news to appear in this section, please contact us 
+              <span class="d-inline-block">
+                  <a href="javascript:void(0)" class="ml-2 mr-2">@</a>
+                  <a href="javascript:void(0)">
+                      <i class="fa fa-twitter mr-2"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-telegram mr-2"></i>
+                    </a>
+                </span><br/>
+                - The cost is 1000 dext per news item.<br/>
+                - Service intended for teams. 
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseTokenNews} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          <Dialog
+            open={savedwallets}
+            onClose={this.handleCloseSavedWallets}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title" className="share-header">
+            Saved wallets that appear in the history
+            </DialogTitle>
+            <DialogContent className="share-content flex-column">
+            <div class="wallet-search-container mb-4">
+                <i class="fa fa-search"></i>
+                <input  type="search" class="wallet-search" placeholder="Search for name or at least 10 characters of a wallet Id..." />
             </div>
+            <div class="p-0 py-2 text-secondary"> No results or empty </div>
+            </DialogContent>
+            <DialogActions className="justify-content-center">
+              <Button onClick={this.handleCloseSavedWallets} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </div>
         )
     }
 }

@@ -17,23 +17,24 @@ class BasicBarChart extends Component {
           options: {
             chart: {
               type: 'bar',
-              height: 350
+              height: 100,
+              width: 200,
             },
             plotOptions: {
               bar: {
                 horizontal: true,
-                columnWidth: '90%',
-                barHeight: '70%',
+                columnWidth: '100%',
+                barHeight: '80%',
+                endingShape: 'rounded',
               }
             },
             dataLabels: {
-              enabled: false
+              enabled: false,
             },
-            xaxis: {
-              categories: ['Information', 'Transactions','Holders', 'Creation']
-            }
+            // xaxis: {
+            //   categories: ['Information', 'Transactions','Holders', 'Creation', 'Pool']
+            // }
           },
-        
         
         };
       }
@@ -43,7 +44,7 @@ class BasicBarChart extends Component {
            
             
                 <div id="chart">
-                <Chart options={this.state.options} series={this.state.scores} type="bar" height={350} />
+                <Chart options={this.state.options} series={this.state.scores} type="bar" height={100} width={200} />
                 </div>
            
         )

@@ -68,7 +68,7 @@ class PoolExplorer extends Component {
                         </h4>
                         <h4 className="py-1 px-2 m-0 hot-pairs-title"> HOT PAIRS
                         <i className="fa fa-fire ml-2"></i>
-                        <a href="#" className="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
+                        <a href="javascript:void(0)" className="hots-info fa fa-question-circle ml-2" onClick={()=>{this.setState({hotpair:true})}}></a>
                         </h4>
                         <ul className="p-0 m-0 no-sponsor">
                             <div className="marquee-wrap">
@@ -162,8 +162,8 @@ class PoolExplorer extends Component {
                             <div className="card card-small mb-4">
                             <div className="card-header border-bottom">
                                 <h6 className="m-0">Pools activity (last 1 hour(s))
-                                <a href="#" className="ml-4">View last 2h</a> - 
-                                <a href="#">View last 4h</a>
+                                <a href="javascript:void(0)" className="ml-4">View last 2h</a> - 
+                                <a href="javascript:void(0)">View last 4h</a>
                                 </h6>
                             </div>
                             <div className="card-body p-0">
