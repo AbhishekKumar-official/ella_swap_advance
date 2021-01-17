@@ -69,6 +69,7 @@ export const lightTheme = {
     boxHomeHeaderSushiImgBorder: "#bd9175",
     boxHomeHeaderMooniswapImgBorder: "#5f7c9e",
     boxHomeHeaderKucoinImgBorder: "#23ae8e",
+    
     boxHomeHeadeBoxImgShadow: "0 0 0.5rem rgba(0,0,0,.31)",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
