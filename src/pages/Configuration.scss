@@ -60,7 +60,7 @@
                     left: calc(-2.25rem + 4px);
                 }
                 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before{
-                    border: none;
+                    border-color: #e1e5eb;
                 }
                 .custom-control-input:focus ~ .custom-control-label::before{
                     box-shadow: none;

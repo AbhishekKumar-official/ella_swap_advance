@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components"
+import backgroundDark from "../src/images/dark-bg.png"
 
 export const lightTheme = {
     body : "#f5f6f8",
@@ -33,32 +34,32 @@ export const lightTheme = {
     toggleBg: "#ffffff",
     toggleBorder: "#e1e5eb",
     togglePointerBg: "#e1e5eb",
-    customselectBg: "rgba(0,184,216,.22)",
-    customselectColor: "#00b8d8",
-    customselectBorder: "#00b8d8",
-    customselectHoverColor: "#ffffff",
-    customselectHoverBorder: "#ffffff",
+    customselectBg: "#ffffff",
+    customselectColor: "#495057",
+    customselectBorder: "#e1e5eb",
+    customselectHoverColor: "#495057",
+    customselectHoverBorder: "#b3bdcc",
     customselectFocusShadow: "0 0.313rem 0.719rem rgba(0,123,255,.1), 0 0.156rem 0.125rem rgba(0,0,0,.06)",
-    customselectOptionColor: "#00b8d8",
-    customselectOptionBorder: "#00b8d8",
-    customselectOptionBg: "rgba(0,184,216,.22)",
+    customselectOptionColor: "#495057",
+    customselectOptionBorder: "#e1e5eb",
+    customselectOptionBg: "#ffffff",
     authformCardbodyShadow: "inset 0 4px 0 0 #00b8d8",
-    authformTitleColor: "#ffffff",
-    boxHomeHeaderBg: "rgba(55,59,64,.5)",
+    authformTitleColor: "#3d5170",
+    boxHomeHeaderBg: "transparent",
     boxHomeHeaderPinkBorder: "#cc0162",
     boxHomeHeaderImgBg: "#ffffff",
-    boxHomeHeaderImgBoxShadow: "0 0 .5rem rgba(0,0,0,.68)",
-    boxHomeHeaderImgBorder: "#e6e6e6",
-    boxHomeHeaderColor: "#e6e6e6",
-    boxHomeBodyBg: "rgba(0,0,0,.55)",
-    inputContainerInputColor: "#cacedb",
-    inputContainerInputBg: "hsla(0,0%,100%,.12)",
+    boxHomeHeaderImgBoxShadow: "0 0 0.5rem rgba(0,0,0,.31)",
+    boxHomeHeaderImgBorder: "#cc0162",
+    boxHomeHeaderColor: "#3d5170",
+    boxHomeBodyBg: "rgba(0,0,0,.04)",
+    inputContainerInputColor: "#495057",
+    inputContainerInputBg: "#ffffff",
     inputContainerInputBoxShadow: "box-shadow .25s cubic-bezier(.27,.01,.38,1.06),border .25s cubic-bezier(.27,.01,.38,1.06)",
-    inputContainerInputBorder: "#868e96 !important",
-    buttonHelpBg: "rgba(0,0,0,.5)",
-    buttonHelpBorder: "hsla(0,0%,100%,.7) !important",
-    boxHomeBodyFitHeightH6Color: "#ffffff",
-    boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
+    inputContainerInputBorder: "#e1e5eb !important",
+    buttonHelpBg: "rgba(0,0,0,.04)",
+    buttonHelpBorder: "#3d5170 !important",
+    boxHomeBodyFitHeightH6Color: "#3d5170",
+    boxHomeBodyFitHeightH6Border: "#212529 !important",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
     listGroupItemBorder: "#15192a",
@@ -156,6 +157,7 @@ export const darkTheme = {
     buttonHelpBorder: "hsla(0,0%,100%,.7) !important",
     boxHomeBodyFitHeightH6Color: "#ffffff",
     boxHomeBodyFitHeightH6Border: "hsla(0,0%,100%,.267) !important",
+    mainDextboardContainerBg: "<img src={backgroundDark} />",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
     listGroupItemBorder: "#15192a",
@@ -322,6 +324,9 @@ export const GlobalStyle = createGlobalStyle`
         .box-home-body-fit-height h6{
             border-color: ${props => props.theme.boxHomeBodyFitHeightH6Border};
             color: ${props => props.theme.boxHomeBodyFitHeightH6Color};
+        }
+        .main-dextboard-container{
+            background: ${props => props.theme.mainDextboardContainerBg} no-repeat;
         }
         .header-hot-pairs{
             background-color: ${props => props.theme.boxHomeHeaderBg};
