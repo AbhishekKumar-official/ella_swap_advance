@@ -65,6 +65,10 @@ export const lightTheme = {
     cardSushiColor: "#bd9175",
     cardMooniswapColor: "#5f7c9e",
     cardKucoinColor: "#23ae8e",
+    boxHomeHeaderIdexImgBorder: "#058dc3",
+    boxHomeHeaderSushiImgBorder: "#bd9175",
+    boxHomeHeaderMooniswapImgBorder: "#5f7c9e",
+    boxHomeHeaderKucoinImgBorder: "#23ae8e",
     boxHomeHeadeBoxImgShadow: "0 0 0.5rem rgba(0,0,0,.31)",
     headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
     headerHotPairsColor: "#cacedb",
@@ -311,6 +315,21 @@ export const GlobalStyle = createGlobalStyle`
             background-color: ${props => props.theme.boxHomeHeaderImgBg};
             border-color: ${props => props.theme.boxHomeHeaderImgBorder};
             box-shadow: ${props => props.theme.boxHomeHeadeBoxImgShadow};
+        }
+        .card-uniswap .box-home-header img{
+            border-color: ${props => props.theme.boxHomeHeaderUniswapImgBorder};
+        }
+        .card-idex .box-home-header img{
+            border-color: ${props => props.theme.boxHomeHeaderIdexImgBorder};
+        }
+        .card-sushi .box-home-header img{
+            border-color: ${props => props.theme.boxHomeHeaderSushiImgBorder};
+        }
+        .card-mooniswap .box-home-header img{
+            border-color: ${props => props.theme.boxHomeHeaderMooniswapImgBorder};
+        }
+        .card-kucoin .box-home-header img{
+            border-color: ${props => props.theme.boxHomeHeaderKucoinImgBorder};
         }
         .box-home-header h4{
             color: ${props => props.theme.boxHomeHeaderColor};
