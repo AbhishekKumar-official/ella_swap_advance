@@ -27,8 +27,11 @@ class Drawer extends Component {
             <img src={logocompressed} />
           </a>
           <a href="javascript:void(0)" className="logo">
-          {islight? (<img src={logolight} />) :( <img src={logo} /> )}
-           
+          {this.props.theme === "light" ? <React.Fragment>
+            <img src={logolight} />
+          </React.Fragment>:<React.Fragment>
+            <img src={logo} /> 
+          </React.Fragment>}
           </a>
         </div>
         <div className="drawer-body">
