@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import banner from "../images/banner.png"
 import "./Configuration.scss"
 class Configuration extends Component {
     render() {
         return (
             <div className="main-configuration">
+                <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
+                    <a href="javascript:void(0)">
+                        <img src={banner} />
+                    </a>
+                </div>
                 <div className="main-configuration-container container-fluid px-4">
                     <div className="page-header row no-gutters py-4">
                         <div className="col-12 col-md-7 text-left mb-0 pr-4 pb-3">

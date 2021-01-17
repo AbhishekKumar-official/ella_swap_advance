@@ -69,6 +69,7 @@
                         height: 17px;
                         margin-top: -5px;
                         font-size: 17px;
+                        color: #cacedb;
                     }
                     .toggle-icon-changer{
                         display: flex;
@@ -98,6 +99,10 @@
                         opacity: 0;
                         transition: opacity .2s ease-in-out;
                     }
+                }
+                a:hover i, 
+                a.active i{
+                    color: #00b8d8;
                 }
                 .theme-mode{
                     padding: .625rem;
