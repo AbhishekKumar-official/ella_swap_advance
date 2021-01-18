@@ -128,9 +128,6 @@
                     border-bottom-left-radius: calc(.25rem - 1px);
                 }
                 .list-group-item{
-                    border-color: #15192a!important;
-                    background-color: #323852;
-
                     .custom-select{
                         height: 100%;
                         font-size: 13px;
@@ -171,6 +168,7 @@
                             overflow: hidden;
                             text-overflow: ellipsis;
                             min-height: 38.5px;
+                            border-bottom: 1px solid rgba(0,0,0,.12);
 
                             a{
                                 color: #00b8d8;

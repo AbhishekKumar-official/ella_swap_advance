@@ -14,7 +14,7 @@ body, html{
     border: 3px solid; 
 }
 .table-responsive{
-    height: 520px;
+    max-height: 520px;
 }
 .tooltip.show {
     opacity: 1;
@@ -52,7 +52,6 @@ a:hover {
     padding: 1.875rem 2.1875rem 0 !important;
     text-align: center;
     margin-bottom: 1rem !important;
-    color: #ffffff;
 }
 .MuiDialogContent-root{
     padding: 0 2.1875rem !important;
@@ -263,4 +262,61 @@ a:hover {
 }
 .modal-connect .connect-wrapper:hover .connect-container{
     background-color: rgba(195,195,195,0.14);
+}
+.table-responsive .dataTables_length, 
+.table-responsive .dataTables_filter{
+    display: none;
+}
+.dataTables_info, 
+.dataTables_paginate{
+    width: 50%;
+    display: inline-flex;
+    overflow: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 12px;
+    font-weight: 400;
+    color: inherit;
+    height: 50px;
+    align-items: center;
+    padding: 0 1.2rem;
+}
+.paginate_button{
+    height: 22px;
+    min-width: 24px;
+    line-height: 22px;
+    padding: 0 6px;
+    border-radius: 3px;
+    margin: 6px 3px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+    outline: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.paginate_button.previous::before{
+    content: "\f053";
+    font-family: "FontAwesome";
+    width: 44px;
+    margin-right: 5px;
+}
+.paginate_button.next::after{
+    content: "\f054";
+    font-family: "FontAwesome";
+    width: 44px;
+    margin-left: 5px;
+}
+.paginate_button.disabled{
+    color: rgba(0, 0, 0, 0.26) !important;
+    background-color: transparent !important;
+    cursor: not-allowed;
+}
+.paginate_button:hover{
+    background-color: rgba(158, 158, 158, 0.2);
+}
+.dataTables_paginate{
+    justify-content: flex-end;
+}
+.MuiAutocomplete-popper{
+    box-shadow: 0 2px 5px rgba(0,0,0,.25) !important;
 }

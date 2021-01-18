@@ -191,9 +191,6 @@
                     border-bottom-left-radius: calc(.25rem - 1px);
                 }
                 .list-group-item{
-                    border-color: #15192a!important;
-                    background-color: #323852;
-
                     input{
                         border-width: 1px;
                         border-style: solid;
@@ -388,7 +385,6 @@
                                 }
                             }
                             .title{
-                                color: #fff;
                                 line-height: 1.4rem;
                                 font-size: 1.4rem;
                                 font-weight: 400;
@@ -780,9 +776,6 @@
                         padding: 5px 10px;
                         border-radius: 10px;
                         font-weight: 700;
-                    }
-                    h6{
-                        color: #ffffff;
                     }
                     .btn-white.active{
                         color: #ffffff;

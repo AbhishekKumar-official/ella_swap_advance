@@ -221,7 +221,6 @@ class MultiSwap extends Component {
                             <div class="autocomplete-class">
                                 <div class="autocomplete-container">
                                     <div class="input-container">
-                                        <input type="text" id="search-input"  placeholder="Add / search pair..." />
                                         <Autocomplete
                                         freeSolo
                                         id="free-solo-2-demo"

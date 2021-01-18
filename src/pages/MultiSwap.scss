@@ -224,6 +224,18 @@
                                 border-width: 1px;
                                 border-style: solid;
                             }
+                            .MuiAutocomplete-inputRoot{
+                                padding: 0;
+                            }
+                            .MuiOutlinedInput-notchedOutline{
+                                padding: 0 !important;
+                            }
+                            .MuiFormControl-root{
+                                margin: 0;
+                            }
+                            .MuiOutlinedInput-notchedOutline{
+                                border-color: transparent;
+                            }
                         }
                         i{
                             position: absolute;

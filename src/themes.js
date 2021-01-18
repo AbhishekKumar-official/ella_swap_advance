@@ -70,43 +70,44 @@ export const lightTheme = {
     boxHomeHeaderMooniswapImgBorder: "#5f7c9e",
     boxHomeHeaderKucoinImgBorder: "#23ae8e",
     boxHomeHeadeBoxImgShadow: "0 0 0.5rem rgba(0,0,0,.31)",
-    headerHotPairsBorder: "hsla(0,0%,90.2%,.18)",
-    headerHotPairsColor: "#cacedb",
-    listGroupItemBorder: "#15192a",
-    listGroupItemBg: "#323852",
-    listGroupItemInputColor: "#cacedb !important",
-    listGroupItemInputBg: "hsla(0,0%,100%,.12) !important",
-    listGroupItemInputBorder: "#868e96",
-    tableColor: "#cacedb",
-    tableThColor: "#ffffff",
-    tableThBg: "#2f3446",
-    tableTdBorder: "#15192a",
-    tableHoverBg: "hsla(0,0%,100%,.1)",
-    pagerColor: "#cacedb",
-    imgLogoBg: "#ffffff",
-    dextScoreBorder: "#262c43",
-    dextScoreBg: "rgba(55,59,64,.5)",
-    cardHeaderBtnWhiteColor: "#00b8d8",
-    cardHeaderBtnWhiteBg: "rgba(0,184,216,.22)",
-    cardHeaderBtnWhiteBorder: "#00b8d8",
-    cardHeaderH6Color: "#ffffff",
-    noCardTxtContentColor: "#ffffff",
-    autocompleteContainerColor: "#cacedb",
-    autocompleteContainerBg: "hsla(0,0%,100%,.12)",
-    autocompleteContainerBorder: "#868e96",
-    footerBg: "#20263c",
-    footerBorder: "#363946",
-    tooltipInnerBg: "#1F1F1F",
-    tooltipInnerBorder: "#868E96",
-    tooltipInnerColor: "#CACEDB",
-    tooltipBorder: "#868E96",
-    MuiDialogPaperBg: "#262c43",
-    MuiDialogPaperColor: "#cacedb",
-    MuiDialogActionsBorder: "#15192a",
-    moreinfoContentColor: "#cacedb",
-    walletsearchContainerInputColor: "#cacedb",
-    walletsearchContainerInputBg: "hsla(0,0%,100%,.12)",
-    walletsearchContainerInputBorder: "#868e96",
+    headerHotPairsBorder: "#e6e6e6",
+    headerHotPairsColor: "#212529",
+    listGroupItemBorder: "rgba(0,0,0,.125)",
+    listGroupItemBg: "#ffffff",
+    listGroupItemInputColor: "#495057 !important",
+    listGroupItemInputBg: "#ffffff !important",
+    listGroupItemInputBorder: "#e1e5eb",
+    tableColor: "#212529",
+    tableThColor: "rgba(0,0,0,.74)",
+    tableThBg: "#fbfbfb",
+    tableTdBorder: "#dee2e6",
+    tableHoverBg: "#eeeeee",
+    pagerColor: "rgba(0,0,0,.54)",
+    imgLogoBg: "transparent",
+    dextScoreBorder: "#e6e6e6",
+    dextScoreBg: "transparent",
+    cardHeaderBtnWhiteColor: "#3d5170",
+    cardHeaderBtnWhiteBg: "#ffffff",
+    cardHeaderBtnWhiteBorder: "#e1e5eb",
+    cardHeaderH6Color: "#3d5170",
+    noCardTxtContentColor: "#3d5170",
+    autocompleteContainerColor: "#495057",
+    autocompleteContainerBg: "#ffffff",
+    autocompleteContainerBorder: "#e1e5eb",
+    footerBg: "#ffffff",
+    footerBorder: "#e1e5eb",
+    tooltipInnerBg: "#ffffff",
+    tooltipInnerBorder: "#ffffff",
+    tooltipInnerColor: "#212529",
+    tooltipBorder: "#ffffff",
+    MuiDialogPaperBg: "#ffffff",
+    MuiDialogPaperColor: "#3d5170",
+    MuiDialogActionsBorder: "#dfe1e3",
+    moreinfoContentColor: "#5a6169",
+    walletsearchContainerInputColor: "#495057",
+    walletsearchContainerInputBg: "#ffffff",
+    walletsearchContainerInputBorder: "#e1e5eb",
+    MuiAutocompletePopperBg: "hsla(0,0%,100%,.96)",
 }
 export const darkTheme = {
     body : "#020416",
@@ -205,6 +206,7 @@ export const darkTheme = {
     walletsearchContainerInputColor: "#cacedb",
     walletsearchContainerInputBg: "hsla(0,0%,100%,.12)",
     walletsearchContainerInputBorder: "#868e96",
+    MuiAutocompletePopperBg: "rgba(39,44,66,.94)",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -398,7 +400,7 @@ export const GlobalStyle = createGlobalStyle`
         .table tbody td{
             border-color: ${props => props.theme.tableTdBorder};
         }
-        .pager li a{
+        .paginate_button{
             color: ${props => props.theme.pagerColor} !important;
         }
         .page-title .img-logo img{
@@ -426,6 +428,9 @@ export const GlobalStyle = createGlobalStyle`
             color: ${props => props.theme.autocompleteContainerColor};
             background-color: ${props => props.theme.autocompleteContainerBg};
             border-color: ${props => props.theme.autocompleteContainerBorder};
+        }
+        .MuiAutocomplete-popper{
+            background-color: ${props => props.theme.MuiAutocompletePopperBg} !important;
         }
         footer.bg-white{
             background-color: ${props => props.theme.footerBg} !important;
