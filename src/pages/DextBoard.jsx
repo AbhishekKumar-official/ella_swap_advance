@@ -56,14 +56,19 @@ class DextBoard extends Component {
     render() {
         const {hotpair,news} = this.state;
         return (
-            <div className={`main-dextboard ${this.props.theme === "light" ? "light-theme" : "dark-theme"}`}>
+            <div className="main-dextboard">
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
                     <a href="javascript:void(0)">
                         <img src={banner} />
                     </a>
                 </div>
                 <div className="main-dextboard-container container-fluid px-4">
-             
+                {this.props.theme === "light" ? <React.Fragment>
+                    <img src={LightBg} alt=""/>
+                </React.Fragment>: <React.Fragment>
+
+                <img src={DarkBg} alt=""/>
+                </React.Fragment>}
                 <div className="page-header row no-gutters py-4">
                     <div className="col-12 col-sm-6 text-left mb-0 pr-4 pb-3">
                         <span className="text-uppercase page-subtitle">PUBLIC v1.6.2 DEXTools.io</span>
