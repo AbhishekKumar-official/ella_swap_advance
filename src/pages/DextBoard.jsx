@@ -6,6 +6,8 @@ import tokenInfo from "../images/token-info.png"
 import logocompressed from "../images/logo-compressed.png"
 import tokenInfo2 from "../images/token-info-2.png"
 import Button from '@material-ui/core/Button';
+import DarkBg from "../images/dark-bg.png";
+import LightBg from "../images/light-bg.png";
 import { NavLink } from 'react-router-dom'
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -54,13 +56,14 @@ class DextBoard extends Component {
     render() {
         const {hotpair,news} = this.state;
         return (
-            <div className="main-dextboard">
+            <div className={`main-dextboard ${this.props.theme === "light" ? "light-theme" : "dark-theme"}`}>
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
                     <a href="javascript:void(0)">
                         <img src={banner} />
                     </a>
                 </div>
                 <div className="main-dextboard-container container-fluid px-4">
+             
                 <div className="page-header row no-gutters py-4">
                     <div className="col-12 col-sm-6 text-left mb-0 pr-4 pb-3">
                         <span className="text-uppercase page-subtitle">PUBLIC v1.6.2 DEXTools.io</span>

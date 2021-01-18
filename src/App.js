@@ -30,8 +30,8 @@ const App = () => {
         <StyledDiv>
           <Drawer themeToggler={handleThemeToggle} theme={theme}/>
           <Switch>
-            <Route exact path="/" component={DextBoard}/>
-            <Route exact path="/dextboard" component={DextBoard}/>
+            <Route exact path="/" component={DextBoard} theme={theme}/>
+            <Route exact path="/dextboard" component={DextBoard} theme={theme}/>
             <Route exact path="/pool-explorer" component={PoolExplorer}/>
             <Route exact path="/big-swap-explorer" component={BigSwapExplorer}/>
             <Route exact path="/multiswap" component={MultiSwap}/>
