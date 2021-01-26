@@ -97,9 +97,9 @@ class Drawer extends Component {
             <li>
               <a href="javascript:void(0)" onClick={this.props.themeToggler} className="nav-link theme-mode">
                 <div className="toggle-icon-changer">
-                  <i class="theme-icon theme-icon-left fa fa-sun-o"></i>
-                  <div class="theme-separator">/</div>
-                  <i className="theme-icon theme-icon-right theme-active fa fa-moon-o"></i>
+                  <i className={`theme-icon theme-icon-left fa fa-sun-o ${this.props.theme === "light" ? "theme-active":null }`}></i>
+                  <div className="theme-separator">/</div>
+                  <i className={`theme-icon theme-icon-right fa fa-moon-o ${this.props.theme === "light" ? null : "theme-active"}`}></i>
                 </div>
                 <span onClick={()=>this.setState({islight:true})}>Theme Mode</span>
               </a>
