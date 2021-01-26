@@ -451,7 +451,7 @@ class PairExplorer extends Component {
                                 </li>
                             </ul>
                             <div>
-                                <div class="dext-score">
+                                <div class="dext-score" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                     <div class="dext-score-title">DEXT Score</div>
                                     <div class="dext-score-chart">
                                         <BasicBarChart />
@@ -487,7 +487,7 @@ class PairExplorer extends Component {
                     <div className="row">
                         <div className={`col-12 mb-4 order-xl-1 col-xl-2 ${setNone ? "d-xl-none": null}`}>
                             <div class="box-home">
-                                <div class="box-home-header px-3 py-3 m-0 text-right">
+                                <div class="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                     <a href="javascript:void(0)" class="button-help" onClick={()=>{this.setState({tokennews:true})}}>?</a>
                                     <h4 class="m-0">TOKEN 
                                     <span>NEWS</span>
