@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import banner from "../images/banner.png"
+import BlockbgLight from "../images/block-bg-light.png"
+import BlockbgDark from "../images/block-bg.png"
+
 import etherscan from "../images/etherscan.png"
 import $ from "jquery";
 import "./BigSwapExplorer.scss"
@@ -27,7 +30,8 @@ class BigSwapExplorer extends Component {
                         <img src={banner} />
                     </a>
                 </div>
-                <div className="header-hot-pairs">
+                <div className="header-hot-pairs" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }
+                >
                         <h4 className="py-1 pl-2 pr-2 m-0 text-center eth-price d-none d-md-inline-block"> ETH: $1153.19 </h4>
                         <h4 className="py-1 pl-2 pr-2 m-0 text-center gas-price d-none d-md-inline-block">
                             <i className="fa fa-dashboard mr-2"></i>126 GWEI 

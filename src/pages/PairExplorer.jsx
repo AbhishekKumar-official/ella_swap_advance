@@ -18,6 +18,9 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import BlockbgLight from "../images/block-bg-light.png"
+import BlockbgDark from "../images/block-bg.png"
+
 import logocompressed from "../images/logo-compressed.png";
 import sync from "../images/sync.png"
 import $ from "jquery";
@@ -204,7 +207,8 @@ class PairExplorer extends Component {
                         <img src={banner} />
                     </a>
                 </div>
-                <div class="header-hot-pairs">
+                <div class="header-hot-pairs" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }
+                >
                         <h4 class="py-1 pl-2 pr-2 m-0 text-center eth-price d-none d-md-inline-block"> ETH: $1153.19 </h4>
                         <h4 class="py-1 pl-2 pr-2 m-0 text-center gas-price d-none d-md-inline-block">
                             <i class="fa fa-dashboard mr-2"></i>126 GWEI 

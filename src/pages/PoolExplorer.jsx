@@ -3,6 +3,8 @@ import banner from "../images/banner.png"
 import unicorn from "../images/uniswap-logo-home.png"
 import etherscan from "../images/etherscan.png"
 import unicrypt from "../images/unicrypt_v3.svg"
+import BlockbgLight from "../images/block-bg-light.png"
+import BlockbgDark from "../images/block-bg.png"
 
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -55,13 +57,13 @@ class PoolExplorer extends Component {
     render() {
         const {hotpair} = this.state;
         return (
-            <div className="main-poolexplorer">
+            <div className="main-poolexplorer" >
                 <div className="banner text-center d-sm-none d-md-none d-lg-block d-none">
                     <a href="javascript:void(0)">
                         <img src={banner} />
                     </a>
                 </div>
-                <div className="header-hot-pairs">
+                <div className="header-hot-pairs" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                         <h4 className="py-1 pl-2 pr-2 m-0 text-center eth-price d-none d-md-inline-block"> ETH: $1153.19 </h4>
                         <h4 className="py-1 pl-2 pr-2 m-0 text-center gas-price d-none d-md-inline-block">
                             <i className="fa fa-dashboard mr-2"></i>126 GWEI 

@@ -8,6 +8,9 @@ import tokenInfo2 from "../images/token-info-2.png"
 import Button from '@material-ui/core/Button';
 import DarkBg from "../images/dark-bg.png";
 import LightBg from "../images/light-bg.png";
+import BlockbgLight from "../images/block-bg-light.png"
+import BlockbgDark from "../images/block-bg.png"
+
 import { NavLink } from 'react-router-dom'
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -91,7 +94,7 @@ class DextBoard extends Component {
                 <div className="row justify-content-md-center">
                     <div className="col-12 col-md-6 col-xl-5 py-5">
                         <div className="box-home card-uniswap pb-5">
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <img src={unicorn} className="mr-2" />
                                 <h4 className="m-0">TOOLS 
                                     <span>UNISWAP V2</span>
@@ -149,7 +152,7 @@ class DextBoard extends Component {
                                 <span className="stats-small__label mb-1 text-uppercase text-white">Idex 2.0</span>
                                 <h6 className="stats-small__value count m-0 text-white">UPGRADING</h6>
                             </div>
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <img src={idex} className="mr-2" />
                                 <h4 className="m-0">TOOLS 
                                 <span>IDEX 2.0</span>
@@ -183,7 +186,7 @@ class DextBoard extends Component {
                     </div>
                     <div className="col-12 col-md-6 col-xl-3 py-5">
                         <div className="box-home">
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <a href="javascript:void(0)" onClick={()=>{this.setState({hotpair:true})}} className="button-help">?</a>
                                 <h4 className="m-0">HOT 
                                 <span>PAIRS</span>
@@ -326,7 +329,7 @@ class DextBoard extends Component {
                     </div>
                     <div className="col-12 col-md-6 col-xl-4 py-5">
                         <div className="box-home">
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <a href="javascript:void(0)" className="button-help" onClick={()=>this.setState({news:true})}>?</a>
                                 <h4 className="m-0"> HOT 
                                 <span>NEWS</span>
@@ -409,7 +412,7 @@ class DextBoard extends Component {
                                     <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <img src={sushi} className="mr-2" />
                                 <h4 className="m-0">TOOLS
                                     <span>SUSHI</span>
@@ -425,7 +428,7 @@ class DextBoard extends Component {
                                     <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }>
                                 <img src={mooniswap} className="mr-2" />
                                 <h4 className="m-0">TOOLS
                                     <span>MOONISWAP</span>
@@ -441,7 +444,7 @@ class DextBoard extends Component {
                                     <h6 className="stats-small__value count m-0 text-white">SOON</h6>
                                 </a>
                             </div>
-                            <div className="box-home-header px-3 py-3 m-0 text-right">
+                            <div className="box-home-header px-3 py-3 m-0 text-right" style ={ { backgroundImage: `url(${this.props.theme === "light"? BlockbgLight : BlockbgDark})` } }s>
                                 <img src={kukoin} className="mr-2" />
                                 <h4 className="m-0">TOOLS
                                     <span>KUCOIN</span>
