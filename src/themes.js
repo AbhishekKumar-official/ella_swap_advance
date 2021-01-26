@@ -107,7 +107,9 @@ export const lightTheme = {
     walletsearchContainerInputColor: "#495057",
     walletsearchContainerInputBg: "#ffffff",
     walletsearchContainerInputBorder: "#e1e5eb",
-    MuiAutocompletePopperBg: "hsla(0,0%,100%,.96)",
+    MuiAutocompleteClearIndicatorColor: "rgba(0,0,0,.54)",
+    MuiAutocompleteListboxBg: "hsla(0,0%,100%,.96)",
+    MuiAutocompleteListboxColor: "#3d5170",
 }
 export const darkTheme = {
     body : "#020416",
@@ -206,7 +208,9 @@ export const darkTheme = {
     walletsearchContainerInputColor: "#cacedb",
     walletsearchContainerInputBg: "hsla(0,0%,100%,.12)",
     walletsearchContainerInputBorder: "#868e96",
-    MuiAutocompletePopperBg: "rgba(39,44,66,.94)",
+    MuiAutocompleteClearIndicatorColor: "#cacedb",
+    MuiAutocompleteListboxBg: "rgba(39,44,66,.94)",
+    MuiAutocompleteListboxColor: "#ffffff",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -429,9 +433,6 @@ export const GlobalStyle = createGlobalStyle`
             background-color: ${props => props.theme.autocompleteContainerBg};
             border-color: ${props => props.theme.autocompleteContainerBorder};
         }
-        .MuiAutocomplete-popper{
-            background-color: ${props => props.theme.MuiAutocompletePopperBg} !important;
-        }
         footer.bg-white{
             background-color: ${props => props.theme.footerBg} !important;
             border-top-color: ${props => props.theme.footerBorder} !important;
@@ -473,6 +474,15 @@ export const GlobalStyle = createGlobalStyle`
         }
         .MuiDialogContent-root.share-content .text-secondary{
             color: ${props => props.theme.moreinfoContentColor} !important;
+        }
+        .MuiAutocomplete-clearIndicator{
+            color: ${props => props.theme.MuiAutocompleteClearIndicatorColor} !important;
+        }
+        .MuiAutocomplete-listbox{
+            background-color: ${props => props.theme.MuiAutocompleteListboxBg};
+        }
+        .MuiAutocomplete-option{
+            color: ${props => props.theme.MuiAutocompleteListboxColor};
         }
         ::-webkit-scrollbar-track{
             background-color: ${props => props.theme.scrollbarTrack};
