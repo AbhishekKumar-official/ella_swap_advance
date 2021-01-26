@@ -336,29 +336,29 @@ class PairExplorer extends Component {
                                         <div class="form-row mt-3">
                                             <div class="form-group col-12">
                                                 <div class="autocomplete-class">
-                                <div class="autocomplete-container">
-                                    <div class="input-container">
-                                    <Autocomplete
-                                                freeSolo
-                                                id="free-solo-2-demo"
-                                                disableClearable
-                                                options={top100Films.map((option) => option.title)}
-                                                renderInput={(params) => (
-                                                <TextField
-                                                    {...params}
-                                                    // label="Add / search pair..."
-                                                    placeholder="Search pair by symbol / name / pair contract / token contract"
-                                                  
-                                                    margin="normal"
-                                                    variant="outlined"
-                                                    InputProps={{ ...params.InputProps, type: 'search' }}
-                                                />
-                                                )}
-                                            />
-                                    </div>
-                                </div>
-                                <i class="fa fa-search fa-2x mr-2"></i>
-                            </div>
+                                                    <div class="autocomplete-container">
+                                                        <div class="input-container">
+                                                            <Autocomplete
+                                                                    freeSolo
+                                                                    id="free-solo-2-demo"
+                                                                    disableClearable
+                                                                    options={top100Films.map((option) => option.title)}
+                                                                    renderInput={(params) => (
+                                                                    <TextField
+                                                                        {...params}
+                                                                        // label="Add / search pair..."
+                                                                        placeholder="Search pair by symbol / name / pair contract / token contract"
+                                                                    
+                                                                        margin="normal"
+                                                                        variant="outlined"
+                                                                        InputProps={{ ...params.InputProps, type: 'search' }}
+                                                                    />
+                                                                    )}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <i class="fa fa-search fa-2x mr-2"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -858,50 +858,6 @@ class PairExplorer extends Component {
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                                <div className="datatable-footer">
-                                    <div className="datatable-footer-inner">
-                                        <div className="page-count"> 397 total </div>
-                                        <div className="datatable-pager">
-                                            <ul className="pager">
-                                                <li className="backward">
-                                                    <a role="button" aria-label="go to first page" href="javascript:void(0)">
-                                                        <i className="fa fa-step-backward"></i>
-                                                    </a>
-                                                </li>
-                                                <li className="chevron-left">
-                                                    <a role="button" aria-label="go to previous page" href="javascript:void(0)">
-                                                        <i className="fa fa-chevron-left"></i>
-                                                    </a>
-                                                </li>
-                                                <li role="button" className="pages" aria-label="page 1">
-                                                    <a href="javascript:void(0)"> 1 </a>
-                                                </li>
-                                                <li role="button" className="pages" aria-label="page 2">
-                                                    <a href="javascript:void(0)"> 2 </a>
-                                                </li>
-                                                <li role="button" className="pages" aria-label="page 3">
-                                                    <a href="javascript:void(0)"> 3 </a>
-                                                </li>
-                                                <li role="button" className="pages" aria-label="page 4">
-                                                    <a href="javascript:void(0)"> 4 </a>
-                                                </li>
-                                                <li role="button" className="pages active" aria-label="page 5">
-                                                    <a href="javascript:void(0)"> 5 </a>
-                                                </li>
-                                                <li className="disabled chevron-right">
-                                                    <a role="button" aria-label="go to next page" href="javascript:void(0)">
-                                                        <i className="fa fa-chevron-right"></i>
-                                                    </a>
-                                                </li>
-                                                <li className="disabled forward">
-                                                    <a role="button" aria-label="go to last page" href="javascript:void(0)">
-                                                        <i className="fa fa-step-forward"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             </div>
