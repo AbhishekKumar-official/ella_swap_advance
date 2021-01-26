@@ -335,8 +335,10 @@ class PairExplorer extends Component {
                                     <li class="list-group-item px-3">
                                         <div class="form-row mt-3">
                                             <div class="form-group col-12">
-                                                <input type="text" class="form-control" placeholder="Search pair by symbol / name / pair contract / token contract" />
-                                                <Autocomplete
+                                                <div class="autocomplete-class">
+                                <div class="autocomplete-container">
+                                    <div class="input-container">
+                                    <Autocomplete
                                                 freeSolo
                                                 id="free-solo-2-demo"
                                                 disableClearable
@@ -353,7 +355,10 @@ class PairExplorer extends Component {
                                                 />
                                                 )}
                                             />
-                                                <i class="fa fa-search fa-2x mr-2"></i>
+                                    </div>
+                                </div>
+                                <i class="fa fa-search fa-2x mr-2"></i>
+                            </div>
                                             </div>
                                         </div>
                                     </li>
