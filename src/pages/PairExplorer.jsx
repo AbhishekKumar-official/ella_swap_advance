@@ -20,7 +20,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import BlockbgLight from "../images/block-bg-light.png"
 import BlockbgDark from "../images/block-bg.png"
-
+import CloseIcon from '@material-ui/icons/Close';
 import logocompressed from "../images/logo-compressed.png";
 import sync from "../images/sync.png"
 import $ from "jquery";
@@ -339,22 +339,15 @@ class PairExplorer extends Component {
                                 <div class="autocomplete-container">
                                     <div class="input-container">
                                     <Autocomplete
-                                                freeSolo
-                                                id="free-solo-2-demo"
-                                                disableClearable
-                                                options={top100Films.map((option) => option.title)}
-                                                renderInput={(params) => (
-                                                <TextField
-                                                    {...params}
-                                                    // label="Add / search pair..."
-                                                    placeholder="Search pair by symbol / name / pair contract / token contract"
-                                                  
-                                                    margin="normal"
-                                                    variant="outlined"
-                                                    InputProps={{ ...params.InputProps, type: 'search' }}
-                                                />
-                                                )}
-                                            />
+                                    id="free-solo-demo"
+                                    
+                                    freeSolo
+                                    options={top100Films.map((option) => option.title)}
+                                    renderInput={(params) => (
+                                    <TextField {...params}  placeholder="Search pair by symbol / name / pair contract / token contract" margin="normal" variant="outlined" />
+                                    )}
+                                />
+                                    
                                     </div>
                                 </div>
                                 <i class="fa fa-search fa-2x mr-2"></i>

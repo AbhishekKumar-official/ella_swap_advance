@@ -224,23 +224,15 @@ class MultiSwap extends Component {
                             <div class="autocomplete-class">
                                 <div class="autocomplete-container">
                                     <div class="input-container">
-                                        <Autocomplete
-                                        freeSolo
-                                        id="free-solo-2-demo"
-                                        disableClearable
-                                        options={top100Films.map((option) => option.title)}
-                                        renderInput={(params) => (
-                                        <TextField
-                                            {...params}
-                                            // label="Add / search pair..."
-                                        
-                                            placeholder="Add / search pair..."
-                                            margin="normal"
-                                            variant="outlined"
-                                            InputProps={{ ...params.InputProps, type: 'search' }}
-                                        />
-                                        )}
-                                    />
+                                    <Autocomplete
+                                    id="free-solo-demo"
+                                    
+                                    freeSolo
+                                    options={top100Films.map((option) => option.title)}
+                                    renderInput={(params) => (
+                                    <TextField {...params}  placeholder="Search pair by symbol / name / pair contract / token contract" margin="normal" variant="outlined" />
+                                    )}
+                                />
                                     </div>
                                 </div>
                                 <i class="fa fa-search fa-2x mr-2"></i>
