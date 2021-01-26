@@ -86,10 +86,10 @@ class Drawer extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link" activeClassName="active" to="/buy-dext">
+              <a className="nav-link" activeClassName="active" href="https://app.uniswap.org/#/swap?inputCurrency=0x26ce25148832c04f3d7f26f32478a9fe55197166" target="_blank">
               <i className="fa fa-bank fa-2x"></i>
                 <span>Buy DEXT</span>
-              </NavLink>
+              </a>
             </li>
           </ul>
           <h6>Theme</h6>

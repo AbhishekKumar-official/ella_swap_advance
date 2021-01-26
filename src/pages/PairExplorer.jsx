@@ -340,7 +340,6 @@ class PairExplorer extends Component {
                                     <div class="input-container">
                                     <Autocomplete
                                     id="free-solo-demo"
-                                    
                                     freeSolo
                                     options={top100Films.map((option) => option.title)}
                                     renderInput={(params) => (
